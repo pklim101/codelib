@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ImgInfoClient	Img/ImgInfo.php	/^class ImgInfoClient implements \\Img\\ImgInfoIf {$/;"	c
+ImgInfoProcessor	Img/ImgInfo.php	/^class ImgInfoProcessor {$/;"	c
+ImgInfo_getimgInfo_args	Img/ImgInfo.php	/^class ImgInfo_getimgInfo_args {$/;"	c
+ImgInfo_getimgInfo_result	Img/ImgInfo.php	/^class ImgInfo_getimgInfo_result {$/;"	c
+args	Img/ImgInfo.php	/^    $args = new \\Img\\ImgInfo_getimgInfo_args();$/;"	v
+bin_accel	Img/ImgInfo.php	/^    $bin_accel = ($output instanceof TBinaryProtocolAccelerated) && function_exists('thrift_protocol_write_binary');$/;"	v
+bin_accel	Img/ImgInfo.php	/^    $bin_accel = ($this->input_ instanceof TBinaryProtocolAccelerated) && function_exists('thrift_protocol_read_binary');$/;"	v
+bin_accel	Img/ImgInfo.php	/^    $bin_accel = ($this->output_ instanceof TBinaryProtocolAccelerated) && function_exists('thrift_protocol_write_binary');$/;"	v
+fid	Img/ImgInfo.php	/^    $fid = 0;$/;"	v
+fname	Img/ImgInfo.php	/^      $fname = null;$/;"	v
+fname	Img/ImgInfo.php	/^    $fname = null;$/;"	v
+ftype	Img/ImgInfo.php	/^    $ftype = 0;$/;"	v
+methodname	Img/ImgInfo.php	/^    $methodname = 'process_'.$fname;$/;"	v
+mtype	Img/ImgInfo.php	/^      $mtype = 0;$/;"	v
+mtype	Img/ImgInfo.php	/^    $mtype = 0;$/;"	v
+result	Img/ImgInfo.php	/^      $result = new \\Img\\ImgInfo_getimgInfo_result();$/;"	v
+result	Img/ImgInfo.php	/^    $result = new \\Img\\ImgInfo_getimgInfo_result();$/;"	v
+rseqid	Img/ImgInfo.php	/^      $rseqid = 0;$/;"	v
+rseqid	Img/ImgInfo.php	/^    $rseqid = 0;$/;"	v
+x	Img/ImgInfo.php	/^        $x = new TApplicationException();$/;"	v
+x	Img/ImgInfo.php	/^      $x = new TApplicationException('Function '.$fname.' not implemented.', TApplicationException::UNKNOWN_METHOD);$/;"	v
+xfer	Img/ImgInfo.php	/^    $xfer = 0;$/;"	v

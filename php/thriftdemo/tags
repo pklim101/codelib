@@ -1,0 +1,511 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+BaseContext	lib/Thrift/Protocol/JSON/BaseContext.php	/^class BaseContext$/;"	c
+CollectionMapKeyException	lib/Thrift/Protocol/SimpleJSON/CollectionMapKeyException.php	/^class CollectionMapKeyException extends TException$/;"	c
+Context	lib/Thrift/Protocol/SimpleJSON/Context.php	/^class Context$/;"	c
+Core	lib/Thrift/StringFunc/Core.php	/^class Core implements TStringFunc$/;"	c
+GEN_DIR	client.php	/^$GEN_DIR = realpath(dirname(__FILE__)) . '\/gen-php';$/;"	v
+GEN_DIR	server.php	/^$GEN_DIR = realpath(dirname(__FILE__)) . 'gen-php';$/;"	v
+Handler	listen.py	/^class Handler(CGIHTTPServer.CGIHTTPRequestHandler):$/;"	c
+ImgInfoClient	gen-php/Img/ImgInfo.php	/^class ImgInfoClient implements \\Img\\ImgInfoIf {$/;"	c
+ImgInfoHandler	server.php	/^class ImgInfoHandler implements \\Img\\ImgInfoIf{$/;"	c
+ImgInfoProcessor	gen-php/Img/ImgInfo.php	/^class ImgInfoProcessor {$/;"	c
+ImgInfo_getimgInfo_args	gen-php/Img/ImgInfo.php	/^class ImgInfo_getimgInfo_args {$/;"	c
+ImgInfo_getimgInfo_result	gen-php/Img/ImgInfo.php	/^class ImgInfo_getimgInfo_result {$/;"	c
+ListContext	lib/Thrift/Protocol/JSON/ListContext.php	/^class ListContext extends BaseContext$/;"	c
+ListContext	lib/Thrift/Protocol/SimpleJSON/ListContext.php	/^class ListContext extends Context$/;"	c
+LookaheadReader	lib/Thrift/Protocol/JSON/LookaheadReader.php	/^class LookaheadReader$/;"	c
+MapContext	lib/Thrift/Protocol/SimpleJSON/MapContext.php	/^class MapContext extends StructContext$/;"	c
+Mbstring	lib/Thrift/StringFunc/Mbstring.php	/^class Mbstring implements TStringFunc$/;"	c
+PairContext	lib/Thrift/Protocol/JSON/PairContext.php	/^class PairContext extends BaseContext$/;"	c
+StoredMessageProtocol	lib/Thrift/TMultiplexedProcessor.php	/^class StoredMessageProtocol extends TProtocolDecorator$/;"	c
+StructContext	lib/Thrift/Protocol/SimpleJSON/StructContext.php	/^class StructContext extends Context$/;"	c
+TApplicationException	lib/Thrift/Exception/TApplicationException.php	/^class TApplicationException extends TException$/;"	c
+TBinaryProtocol	lib/Thrift/Protocol/TBinaryProtocol.php	/^class TBinaryProtocol extends TProtocol$/;"	c
+TBinaryProtocolAccelerated	lib/Thrift/Protocol/TBinaryProtocolAccelerated.php	/^class TBinaryProtocolAccelerated extends TBinaryProtocol$/;"	c
+TBinaryProtocolFactory	lib/Thrift/Factory/TBinaryProtocolFactory.php	/^class TBinaryProtocolFactory implements TProtocolFactory$/;"	c
+TBinarySerializer	lib/Thrift/Serializer/TBinarySerializer.php	/^class TBinarySerializer$/;"	c
+TBufferedTransport	lib/Thrift/Transport/TBufferedTransport.php	/^class TBufferedTransport extends TTransport$/;"	c
+TCompactProtocol	lib/Thrift/Protocol/TCompactProtocol.php	/^class TCompactProtocol extends TProtocol$/;"	c
+TCompactProtocolFactory	lib/Thrift/Factory/TCompactProtocolFactory.php	/^class TCompactProtocolFactory implements TProtocolFactory$/;"	c
+TCurlClient	lib/Thrift/Transport/TCurlClient.php	/^class TCurlClient extends TTransport$/;"	c
+TException	lib/Thrift/Exception/TException.php	/^class TException extends \\Exception$/;"	c
+TForkingServer	lib/Thrift/Server/TForkingServer.php	/^class TForkingServer extends TServer$/;"	c
+TFramedTransport	lib/Thrift/Transport/TFramedTransport.php	/^class TFramedTransport extends TTransport$/;"	c
+THttpClient	lib/Thrift/Transport/THttpClient.php	/^class THttpClient extends TTransport$/;"	c
+TJSONProtocol	lib/Thrift/Protocol/TJSONProtocol.php	/^class TJSONProtocol extends TProtocol$/;"	c
+TJSONProtocolFactory	lib/Thrift/Factory/TJSONProtocolFactory.php	/^class TJSONProtocolFactory implements TProtocolFactory$/;"	c
+TMemoryBuffer	lib/Thrift/Transport/TMemoryBuffer.php	/^class TMemoryBuffer extends TTransport$/;"	c
+TMessageType	lib/Thrift/Type/TMessageType.php	/^class TMessageType$/;"	c
+TMultiplexedProcessor	lib/Thrift/TMultiplexedProcessor.php	/^class TMultiplexedProcessor$/;"	c
+TMultiplexedProtocol	lib/Thrift/Protocol/TMultiplexedProtocol.php	/^class TMultiplexedProtocol extends TProtocolDecorator$/;"	c
+TNullTransport	lib/Thrift/Transport/TNullTransport.php	/^class TNullTransport extends TTransport$/;"	c
+TPhpStream	lib/Thrift/Transport/TPhpStream.php	/^class TPhpStream extends TTransport$/;"	c
+TProtocolException	lib/Thrift/Exception/TProtocolException.php	/^class TProtocolException extends TException$/;"	c
+TSSLServerSocket	lib/Thrift/Server/TSSLServerSocket.php	/^class TSSLServerSocket extends TServerSocket$/;"	c
+TSSLSocket	lib/Thrift/Transport/TSSLSocket.php	/^class TSSLSocket extends TSocket$/;"	c
+TServerSocket	lib/Thrift/Server/TServerSocket.php	/^class TServerSocket extends TServerTransport$/;"	c
+TSimpleJSONProtocol	lib/Thrift/Protocol/TSimpleJSONProtocol.php	/^class TSimpleJSONProtocol extends TProtocol$/;"	c
+TSimpleServer	lib/Thrift/Server/TSimpleServer.php	/^class TSimpleServer extends TServer$/;"	c
+TSocket	lib/Thrift/Transport/TSocket.php	/^class TSocket extends TTransport$/;"	c
+TSocketPool	lib/Thrift/Transport/TSocketPool.php	/^class TSocketPool extends TSocket$/;"	c
+TStringFuncFactory	lib/Thrift/Factory/TStringFuncFactory.php	/^class TStringFuncFactory$/;"	c
+TTransportException	lib/Thrift/Exception/TTransportException.php	/^class TTransportException extends TException$/;"	c
+TTransportFactory	lib/Thrift/Factory/TTransportFactory.php	/^class TTransportFactory$/;"	c
+TType	lib/Thrift/Type/TType.php	/^class TType$/;"	c
+ThriftClassLoader	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^class ThriftClassLoader$/;"	c
+_etype	lib/Thrift/Base/TBase.php	/^    $_etype = $size = 0;$/;"	v
+_etype	lib/Thrift/Exception/TException.php	/^    $_etype = $size = 0;$/;"	v
+_ktype	lib/Thrift/Base/TBase.php	/^    $_ktype = $_vtype = $size = 0;$/;"	v
+_ktype	lib/Thrift/Exception/TException.php	/^    $_ktype = $_vtype = $size = 0;$/;"	v
+apc_fetch	lib/Thrift/Transport/TSocketPool.php	/^  function apc_fetch($key) { return FALSE; }$/;"	f
+apc_store	lib/Thrift/Transport/TSocketPool.php	/^  function apc_store($key, $var, $ttl=0) { return FALSE; }$/;"	f
+args	gen-php/Img/ImgInfo.php	/^    $args = new \\Img\\ImgInfo_getimgInfo_args();$/;"	v
+arr	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $arr = unpack('N', $data);$/;"	v
+arr	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $arr = unpack('N2', $data);$/;"	v
+arr	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $arr = unpack('c', $data);$/;"	v
+arr	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $arr = unpack('d', $data);$/;"	v
+arr	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $arr = unpack('n', $data);$/;"	v
+arr	lib/Thrift/Protocol/TCompactProtocol.php	/^      $arr = unpack('C', $x);$/;"	v
+arr	lib/Thrift/Protocol/TCompactProtocol.php	/^    $arr = unpack('C', $data);$/;"	v
+arr	lib/Thrift/Protocol/TCompactProtocol.php	/^    $arr = unpack('c', $data);$/;"	v
+arr	lib/Thrift/Protocol/TCompactProtocol.php	/^    $arr = unpack('d', $data);$/;"	v
+arr	lib/Thrift/Protocol/TJSONProtocol.php	/^            $arr = $this->readJSONString(true);$/;"	v
+arr	lib/Thrift/Protocol/TJSONProtocol.php	/^        $arr = $this->readJSONString(false);$/;"	v
+arr	lib/Thrift/Protocol/TProtocol.php	/^          $arr = unpack('c', $data);$/;"	v
+arr	lib/Thrift/Protocol/TProtocol.php	/^        $arr = unpack('N', $data);$/;"	v
+arr	lib/Thrift/Protocol/TProtocol.php	/^        $arr = unpack('c', $data);$/;"	v
+bin_accel	gen-php/Img/ImgInfo.php	/^    $bin_accel = ($output instanceof TBinaryProtocolAccelerated) && function_exists('thrift_protocol_write_binary');$/;"	v
+bin_accel	gen-php/Img/ImgInfo.php	/^    $bin_accel = ($this->input_ instanceof TBinaryProtocolAccelerated) && function_exists('thrift_protocol_read_binary');$/;"	v
+bin_accel	gen-php/Img/ImgInfo.php	/^    $bin_accel = ($this->output_ instanceof TBinaryProtocolAccelerated) && function_exists('thrift_protocol_write_binary');$/;"	v
+bool	lib/Thrift/Protocol/TJSONProtocol.php	/^        $bool = $this->readJSONInteger() == 0 ? false : true;$/;"	v
+buf	lib/Thrift/Transport/TFramedTransport.php	/^      $buf = TStringFuncFactory::create()->substr($buf, 0, $len);$/;"	v
+buf	lib/Thrift/Transport/TFramedTransport.php	/^    $buf = $this->transport_->readAll(4);$/;"	v
+buf	lib/Thrift/Transport/TPhpStream.php	/^      $buf = TStringFuncFactory::create()->substr($buf, $got);$/;"	v
+buf	lib/Thrift/Transport/TSocket.php	/^        $buf = TStringFuncFactory::create()->substr($buf, $written);$/;"	v
+bufLength	lib/Thrift/Transport/TMemoryBuffer.php	/^    $bufLength = TStringFuncFactory::create()->strlen($this->buf_);$/;"	v
+byte	lib/Thrift/Protocol/TCompactProtocol.php	/^      $byte = $arr[1];$/;"	v
+byte	lib/Thrift/Protocol/TJSONProtocol.php	/^        $byte = $this->readJSONInteger();$/;"	v
+ch	lib/Thrift/Protocol/TJSONProtocol.php	/^            $ch = $this->reader_->peek();$/;"	v
+ch	lib/Thrift/Protocol/TJSONProtocol.php	/^            $ch = substr($s, $i, 1);$/;"	v
+ch	lib/Thrift/Protocol/TJSONProtocol.php	/^        $ch = $this->reader_->peek();$/;"	v
+ch	lib/Thrift/Protocol/TJSONProtocol.php	/^        $ch = $this->reader_->read();$/;"	v
+class	lib/Thrift/Base/TBase.php	/^              $class = $fspec['class'];$/;"	v
+class	lib/Thrift/Base/TBase.php	/^          $class = $espec['class'];$/;"	v
+class	lib/Thrift/Base/TBase.php	/^          $class = $kspec['class'];$/;"	v
+class	lib/Thrift/Base/TBase.php	/^          $class = $vspec['class'];$/;"	v
+class	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^            $class = array_pop($m);$/;"	v
+class	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^            $class = substr($class, 1);$/;"	v
+class	lib/Thrift/Exception/TException.php	/^              $class = $fspec['class'];$/;"	v
+class	lib/Thrift/Exception/TException.php	/^          $class = $espec['class'];$/;"	v
+class	lib/Thrift/Exception/TException.php	/^          $class = $kspec['class'];$/;"	v
+class	lib/Thrift/Exception/TException.php	/^          $class = $vspec['class'];$/;"	v
+className	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^                        $className = $n[1];$/;"	v
+className	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^                        $className = 'Types';$/;"	v
+className	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^                    $className = substr($class, $pos + 1);$/;"	v
+client	client.php	/^    $client    = new \\Img\\ImgInfoClient($protocol);$/;"	v
+compact_type	lib/Thrift/Protocol/TCompactProtocol.php	/^    $compact_type = $compact_type_and_delta & 0x0f;$/;"	v
+consecfails	lib/Thrift/Transport/TSocketPool.php	/^          $consecfails = 0;$/;"	v
+consecfails	lib/Thrift/Transport/TSocketPool.php	/^        $consecfails = apc_fetch($consecfailsKey);$/;"	v
+consecfailsKey	lib/Thrift/Transport/TSocketPool.php	/^        $consecfailsKey = 'thrift_consecfails:'.$host.':'.$port.'~';$/;"	v
+context	lib/Thrift/Transport/TSSLSocket.php	/^                              $context=null,$/;"	v
+contextid	lib/Thrift/Transport/THttpClient.php	/^    $contextid = stream_context_create(array('http' => $options));$/;"	v
+ctype	lib/Thrift/Protocol/TCompactProtocol.php	/^        $ctype = TCompactProtocol::COMPACT_TRUE;$/;"	v
+ctype	lib/Thrift/Protocol/TCompactProtocol.php	/^      $ctype = TCompactProtocol::COMPACT_FALSE;$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $data = pack('N2', $hi, $lo);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = $this->trans_->readAll(1);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = $this->trans_->readAll(2);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = $this->trans_->readAll(4);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = $this->trans_->readAll(8);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = pack('N', $value);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = pack('c', $value ? 1 : 0);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = pack('c', $value);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = pack('d', $value);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = pack('n', $value);$/;"	v
+data	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $data = strrev($this->trans_->readAll(8));$/;"	v
+data	lib/Thrift/Protocol/TCompactProtocol.php	/^        $data = $data >> 7;$/;"	v
+data	lib/Thrift/Protocol/TCompactProtocol.php	/^    $data = $this->trans_->readAll(1);$/;"	v
+data	lib/Thrift/Protocol/TCompactProtocol.php	/^    $data = $this->trans_->readAll(8);$/;"	v
+data	lib/Thrift/Protocol/TCompactProtocol.php	/^    $data = pack('c', $value);$/;"	v
+data	lib/Thrift/Protocol/TCompactProtocol.php	/^    $data = pack('d', $value);$/;"	v
+data	lib/Thrift/Protocol/TJSONProtocol.php	/^        $data = base64_decode($arr, true);$/;"	v
+data	lib/Thrift/Protocol/TProtocol.php	/^          $data = $itrans->readAll(1);$/;"	v
+data	lib/Thrift/Protocol/TProtocol.php	/^        $data = $itrans->readAll(1);$/;"	v
+data	lib/Thrift/Protocol/TProtocol.php	/^        $data = $itrans->readAll(4);$/;"	v
+data	lib/Thrift/Transport/TBufferedTransport.php	/^      $data = $this->rBuf_;$/;"	v
+data	lib/Thrift/Transport/TBufferedTransport.php	/^      $data = $this->transport_->readAll($len);$/;"	v
+data	lib/Thrift/Transport/TBufferedTransport.php	/^      $data = TStringFuncFactory::create()->substr($this->rBuf_, 0, $len);$/;"	v
+data	lib/Thrift/Transport/THttpClient.php	/^    $data = @fread($this->handle_, $len);$/;"	v
+data	lib/Thrift/Transport/TPhpStream.php	/^    $data = @fread($this->inStream_, $len);$/;"	v
+data	lib/Thrift/Transport/TSocket.php	/^      $data = fread($this->handle_, $len);$/;"	v
+data	lib/Thrift/Transport/TTransport.php	/^    $data = '';$/;"	v
+debugHandler	lib/Thrift/Transport/TSSLSocket.php	/^                              $debugHandler=null) {$/;"	v
+debugHandler	lib/Thrift/Transport/TSocket.php	/^                              $debugHandler=null) {$/;"	v
+debugHandler	lib/Thrift/Transport/TSocketPool.php	/^                              $debugHandler=null) {$/;"	v
+defaultHeaders	lib/Thrift/Transport/THttpClient.php	/^    $defaultHeaders = array('Host' => $host,$/;"	v
+delta	lib/Thrift/Protocol/TCompactProtocol.php	/^    $delta = $compact_type_and_delta >> 4;$/;"	v
+delta	lib/Thrift/Protocol/TCompactProtocol.php	/^    $delta = $fid - $this->lastFid;$/;"	v
+dub	lib/Thrift/Protocol/TJSONProtocol.php	/^        $dub = $this->readJSONDouble();$/;"	v
+elapsed	lib/Thrift/Transport/TSocketPool.php	/^        $elapsed = time() - $lastFailtime;$/;"	v
+elem	lib/Thrift/Base/TBase.php	/^          $elem = new $class();$/;"	v
+elem	lib/Thrift/Base/TBase.php	/^      $elem = $set ? $key : $val;$/;"	v
+elem	lib/Thrift/Base/TBase.php	/^      $elem = null;$/;"	v
+elem	lib/Thrift/Exception/TException.php	/^          $elem = new $class();$/;"	v
+elem	lib/Thrift/Exception/TException.php	/^      $elem = $set ? $key : $val;$/;"	v
+elem	lib/Thrift/Exception/TException.php	/^      $elem = null;$/;"	v
+elemType	lib/Thrift/Protocol/TJSONProtocol.php	/^        $elemType = $this->getTypeIDForTypeName($this->readJSONString(false));$/;"	v
+eread	lib/Thrift/Base/TBase.php	/^      $eread = 'read'.TBase::$tmethod[$etype];$/;"	v
+eread	lib/Thrift/Base/TBase.php	/^    $eread = $vread = null;$/;"	v
+eread	lib/Thrift/Exception/TException.php	/^      $eread = 'read'.TBase::$tmethod[$etype];$/;"	v
+eread	lib/Thrift/Exception/TException.php	/^    $eread = $vread = null;$/;"	v
+error	lib/Thrift/Transport/TCurlClient.php	/^      $error = 'TCurlClient: Could not connect to '.$fullUrl;$/;"	v
+error	lib/Thrift/Transport/THttpClient.php	/^      $error = 'THttpClient: Could not connect to '.$host.$this->uri_;$/;"	v
+error	lib/Thrift/Transport/TSSLSocket.php	/^      $error = 'TSocket: Could not connect to '.$this->host_.':'.$this->port_.' ('.$errstr.' ['.$errno.'])';$/;"	v
+error	lib/Thrift/Transport/TSocket.php	/^      $error = 'TSocket: Could not connect to '.$this->host_.':'.$this->port_.' ('.$errstr.' ['.$errno.'])';$/;"	v
+error	lib/Thrift/Transport/TSocketPool.php	/^    $error = 'TSocketPool: All hosts in pool are down. ';$/;"	v
+espec	lib/Thrift/Base/TBase.php	/^        $espec = $spec['elem'];$/;"	v
+espec	lib/Thrift/Base/TBase.php	/^      $espec = $spec['elem'];$/;"	v
+espec	lib/Thrift/Exception/TException.php	/^        $espec = $spec['elem'];$/;"	v
+espec	lib/Thrift/Exception/TException.php	/^      $espec = $spec['elem'];$/;"	v
+etype	lib/Thrift/Base/TBase.php	/^    $etype = $spec['etype'];$/;"	v
+etype	lib/Thrift/Exception/TException.php	/^    $etype = $spec['etype'];$/;"	v
+ewrite	lib/Thrift/Base/TBase.php	/^      $ewrite = 'write'.TBase::$tmethod[$etype];$/;"	v
+ewrite	lib/Thrift/Base/TBase.php	/^    $ewrite = null;$/;"	v
+ewrite	lib/Thrift/Exception/TException.php	/^      $ewrite = 'write'.TBase::$tmethod[$etype];$/;"	v
+ewrite	lib/Thrift/Exception/TException.php	/^    $ewrite = null;$/;"	v
+failtimeKey	lib/Thrift/Transport/TSocketPool.php	/^      $failtimeKey = 'thrift_failtime:'.$host.':'.$port.'~';$/;"	v
+fid	gen-php/Img/ImgInfo.php	/^    $fid = 0;$/;"	v
+fid	lib/Thrift/Base/TBase.php	/^    $fid = 0;$/;"	v
+fid	lib/Thrift/Exception/TException.php	/^    $fid = 0;$/;"	v
+fid	lib/Thrift/Protocol/TProtocol.php	/^          $fid = 0;$/;"	v
+fieldId	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $fieldId = 0;$/;"	v
+fieldId	lib/Thrift/Protocol/TJSONProtocol.php	/^            $fieldId = $this->readJSONInteger();$/;"	v
+fieldType	lib/Thrift/Protocol/TJSONProtocol.php	/^            $fieldType = $this->getTypeIDForTypeName($this->readJSONString(false));$/;"	v
+fieldType	lib/Thrift/Protocol/TJSONProtocol.php	/^            $fieldType = TType::STOP;$/;"	v
+field_id	lib/Thrift/Protocol/TCompactProtocol.php	/^      $field_id = $this->lastFid + $delta;$/;"	v
+field_id	lib/Thrift/Protocol/TCompactProtocol.php	/^      $field_id = 0;$/;"	v
+field_type	lib/Thrift/Protocol/TCompactProtocol.php	/^      $field_type = $compact_type;$/;"	v
+field_type	lib/Thrift/Protocol/TCompactProtocol.php	/^    $field_type = $this->getTType($compact_type);$/;"	v
+file	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^                    $file = $dir.DIRECTORY_SEPARATOR .$/;"	v
+file	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^                    $file = $dir.DIRECTORY_SEPARATOR.$/;"	v
+fname	gen-php/Img/ImgInfo.php	/^      $fname = null;$/;"	v
+fname	gen-php/Img/ImgInfo.php	/^    $fname = null;$/;"	v
+fname	lib/Thrift/Base/TBase.php	/^    $fname = null;$/;"	v
+fname	lib/Thrift/Exception/TException.php	/^    $fname = null;$/;"	v
+fspec	lib/Thrift/Base/TBase.php	/^        $fspec = $spec[$fid];$/;"	v
+fspec	lib/Thrift/Exception/TException.php	/^        $fspec = $spec[$fid];$/;"	v
+ftype	gen-php/Img/ImgInfo.php	/^    $ftype = 0;$/;"	v
+ftype	lib/Thrift/Base/TBase.php	/^        $ftype = $fspec['type'];$/;"	v
+ftype	lib/Thrift/Base/TBase.php	/^    $ftype = 0;$/;"	v
+ftype	lib/Thrift/Exception/TException.php	/^        $ftype = $fspec['type'];$/;"	v
+ftype	lib/Thrift/Exception/TException.php	/^    $ftype = 0;$/;"	v
+ftype	lib/Thrift/Protocol/TProtocol.php	/^          $ftype = $arr[1];$/;"	v
+ftype	lib/Thrift/Protocol/TProtocol.php	/^          $ftype = 0;$/;"	v
+fullUrl	lib/Thrift/Transport/TCurlClient.php	/^    $fullUrl = $this->scheme_.":\/\/".$host.$this->uri_;$/;"	v
+func	lib/Thrift/Base/TBase.php	/^            $func = 'read'.TBase::$tmethod[$ftype];$/;"	v
+func	lib/Thrift/Base/TBase.php	/^          $func = 'write'.TBase::$tmethod[$ftype];$/;"	v
+func	lib/Thrift/Exception/TException.php	/^            $func = 'read'.TBase::$tmethod[$ftype];$/;"	v
+func	lib/Thrift/Exception/TException.php	/^          $func = 'write'.TBase::$tmethod[$ftype];$/;"	v
+got	lib/Thrift/Transport/TPhpStream.php	/^      $got = @fwrite($this->outStream_, $buf);$/;"	v
+got	lib/Thrift/Transport/TTransport.php	/^    $got = 0;$/;"	v
+handle	lib/Thrift/Server/TSSLServerSocket.php	/^    $handle = @stream_socket_accept($this->listener_, $this->acceptTimeout_ \/ 1000.0);$/;"	v
+handle	lib/Thrift/Server/TServerSocket.php	/^    $handle = @stream_socket_accept($this->listener_, $this->acceptTimeout_ \/ 1000.0);$/;"	v
+handler	server.php	/^$handler = new \\Img\\ImgInfoHandler();$/;"	v
+have	lib/Thrift/Transport/TBufferedTransport.php	/^    $have = TStringFuncFactory::create()->strlen($this->rBuf_);$/;"	v
+headers	lib/Thrift/Transport/TCurlClient.php	/^    $headers = array('Accept: application\/x-thrift',$/;"	v
+headers	lib/Thrift/Transport/THttpClient.php	/^    $headers = array();$/;"	v
+hi	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $hi = ~$hi & (int) 0xffffffff;$/;"	v
+hi	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $hi = ~$hi;$/;"	v
+hi	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $hi = $arr[1];$/;"	v
+hi	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $hi = $value >> 32;$/;"	v
+hi	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $hi = (int) ($value \/ 4294967296);$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^           $hi === 0) {$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^          $hi = $hi & (127 << 25);$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^          $hi = $hi >> 7;$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^        $hi = ~$hi;$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^      $hi = ($hi << 1) | $lowbit;$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^      $hi = ($hi ^ $xorer) & 0xffffffff;$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^      $hi = (int) $value >> 32;$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^      $hi = ~$hi & (int) 0xffffffff;$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^    $hi = ($hi >> 1) ^ $xorer;$/;"	v
+hi	lib/Thrift/Protocol/TCompactProtocol.php	/^    $hi = 0;$/;"	v
+host	lib/Thrift/Server/TSSLServerSocket.php	/^      $host = 'ssl:\/\/'.$host;$/;"	v
+host	lib/Thrift/Transport/TCurlClient.php	/^    $host = $this->host_.($this->port_ != 80 ? ':'.$this->port_ : '');$/;"	v
+host	lib/Thrift/Transport/THttpClient.php	/^    $host = $this->host_.($this->port_ != 80 ? ':'.$this->port_ : '');$/;"	v
+host	lib/Thrift/Transport/TSSLSocket.php	/^      $host = 'ssl:\/\/'.$host;$/;"	v
+hostlist	lib/Thrift/Transport/TSocketPool.php	/^    $hostlist = implode(',', $hosts);$/;"	v
+hosts	lib/Thrift/Transport/TSocketPool.php	/^    $hosts = array();$/;"	v
+i16	lib/Thrift/Protocol/TJSONProtocol.php	/^        $i16 = $this->readJSONInteger();$/;"	v
+i32	lib/Thrift/Protocol/TJSONProtocol.php	/^        $i32 = $this->readJSONInteger();$/;"	v
+i64	lib/Thrift/Protocol/TJSONProtocol.php	/^            $i64 = $this->readJSONInteger();$/;"	v
+i64	lib/Thrift/Protocol/TJSONProtocol.php	/^            $i64 = $this->readJSONIntegerAsString();$/;"	v
+idx	lib/Thrift/Protocol/TCompactProtocol.php	/^    $idx = 0;$/;"	v
+inputProtocol	lib/Thrift/Server/TForkingServer.php	/^      $inputProtocol = $this->inputProtocolFactory_->getProtocol($inputTransport);$/;"	v
+inputProtocol	lib/Thrift/Server/TSimpleServer.php	/^          $inputProtocol = $this->inputProtocolFactory_->getProtocol($inputTransport);$/;"	v
+inputTransport	lib/Thrift/Server/TForkingServer.php	/^      $inputTransport = $this->inputTransportFactory_->getTransport($transport);$/;"	v
+inputTransport	lib/Thrift/Server/TSimpleServer.php	/^          $inputTransport = $this->inputTransportFactory_->getTransport($transport);$/;"	v
+isLastServer	lib/Thrift/Transport/TSocketPool.php	/^        $isLastServer = ($i == ($numServers - 1));$/;"	v
+isLastServer	lib/Thrift/Transport/TSocketPool.php	/^      $isLastServer = false;$/;"	v
+isMapKey	lib/Thrift/Protocol/TSimpleJSONProtocol.php	/^        $isMapKey = $this->writeContext_->isMapKey();$/;"	v
+isNeg	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $isNeg = $hi  < 0;$/;"	v
+isNeg	lib/Thrift/Protocol/TCompactProtocol.php	/^    $isNeg = $hi < 0 || $hi & 0x80000000;$/;"	v
+json	lib/Thrift/Protocol/TJSONProtocol.php	/^        $json = json_encode($str);$/;"	v
+json	lib/Thrift/Protocol/TJSONProtocol.php	/^        $json = preg_replace_callback('\/\\\\\\\\u([0-9a-f]{4})\/i',$/;"	v
+json	lib/Thrift/Protocol/TJSONProtocol.php	/^        $json = preg_replace_callback('\/\\\\\\\\u(d[89ab][0-9a-f]{2})\\\\\\\\u(d[cdef][0-9a-f]{2})\/i',$/;"	v
+jsonString	lib/Thrift/Protocol/TJSONProtocol.php	/^      $jsonString = '';$/;"	v
+key	lib/Thrift/Base/TBase.php	/^          $key = new $class();$/;"	v
+key	lib/Thrift/Base/TBase.php	/^      $key = $val = null;$/;"	v
+key	lib/Thrift/Exception/TException.php	/^          $key = new $class();$/;"	v
+key	lib/Thrift/Exception/TException.php	/^      $key = $val = null;$/;"	v
+keyType	lib/Thrift/Protocol/TJSONProtocol.php	/^        $keyType = $this->getTypeIDForTypeName($this->readJSONString(false));$/;"	v
+key_type	lib/Thrift/Protocol/TCompactProtocol.php	/^    $key_type = $this->getTType($types >> 4);$/;"	v
+kread	lib/Thrift/Base/TBase.php	/^      $kread = 'read'.TBase::$tmethod[$ktype];$/;"	v
+kread	lib/Thrift/Base/TBase.php	/^    $kread = $vread = null;$/;"	v
+kread	lib/Thrift/Exception/TException.php	/^      $kread = 'read'.TBase::$tmethod[$ktype];$/;"	v
+kread	lib/Thrift/Exception/TException.php	/^    $kread = $vread = null;$/;"	v
+kspec	lib/Thrift/Base/TBase.php	/^      $kspec = $spec['key'];$/;"	v
+kspec	lib/Thrift/Exception/TException.php	/^      $kspec = $spec['key'];$/;"	v
+ktype	lib/Thrift/Base/TBase.php	/^    $ktype = $spec['ktype'];$/;"	v
+ktype	lib/Thrift/Exception/TException.php	/^    $ktype = $spec['ktype'];$/;"	v
+ktype	lib/Thrift/Protocol/TProtocol.php	/^        $ktype = $arr[1];$/;"	v
+kwrite	lib/Thrift/Base/TBase.php	/^      $kwrite = 'write'.TBase::$tmethod[$ktype];$/;"	v
+kwrite	lib/Thrift/Base/TBase.php	/^    $kwrite = $vwrite = null;$/;"	v
+kwrite	lib/Thrift/Exception/TException.php	/^      $kwrite = 'write'.TBase::$tmethod[$ktype];$/;"	v
+kwrite	lib/Thrift/Exception/TException.php	/^    $kwrite = $vwrite = null;$/;"	v
+last	lib/Thrift/Protocol/TCompactProtocol.php	/^    $last = array_pop($this->structs);$/;"	v
+lastChar	lib/Thrift/Protocol/TJSONProtocol.php	/^          $lastChar = $ch;$/;"	v
+lastChar	lib/Thrift/Protocol/TJSONProtocol.php	/^          $lastChar = self::DOUBLEESC;$/;"	v
+lastChar	lib/Thrift/Protocol/TJSONProtocol.php	/^      $lastChar = null;$/;"	v
+lastFailtime	lib/Thrift/Transport/TSocketPool.php	/^        $lastFailtime = 0;$/;"	v
+lastFailtime	lib/Thrift/Transport/TSocketPool.php	/^      $lastFailtime = apc_fetch($failtimeKey);$/;"	v
+len	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $len = TStringFuncFactory::create()->strlen($value);$/;"	v
+len	lib/Thrift/Protocol/TCompactProtocol.php	/^    $len = TStringFuncFactory::create()->strlen($value);$/;"	v
+len	lib/Thrift/Protocol/TProtocol.php	/^        $len = 0 - (($len - 1) ^ 0xffffffff);$/;"	v
+len	lib/Thrift/Protocol/TProtocol.php	/^      $len = $len[1];$/;"	v
+len	lib/Thrift/Protocol/TProtocol.php	/^      $len = unpack('N', $itrans->readAll(4));$/;"	v
+length	lib/Thrift/StringFunc/Mbstring.php	/^            $length = $this->strlen($str) - $start;$/;"	v
+lo	lib/Thrift/Protocol/TBinaryProtocol.php	/^          $lo = 0;$/;"	v
+lo	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $lo = ~$lo & (int) 0xffffffff;$/;"	v
+lo	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $lo = ~$lo;$/;"	v
+lo	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $lo = $arr[2];$/;"	v
+lo	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $lo = $value & 0xFFFFFFFF;$/;"	v
+lo	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $lo = (int) $value;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^          $lo = $lo >> 7;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^          $lo = $lo | ($hi << 25);$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^          $lo = 0;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^        $lo = 0;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^        $lo = ~$lo;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^      $lo = ($lo << 1);$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^      $lo = ($lo ^ $xorer) & 0xffffffff;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^      $lo = (int) $value & 0xffffffff;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^      $lo = ~$lo & (int) 0xffffffff;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^    $lo = $lo ^ $xorer;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^    $lo = $lo | (($hi & 1) << 31);$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^    $lo = ($lo >> 1) & 0x7fffffff;$/;"	v
+lo	lib/Thrift/Protocol/TCompactProtocol.php	/^    $lo = 0;$/;"	v
+loader	client.php	/^$loader = new ThriftClassLoader();$/;"	v
+loader	server.php	/^$loader = new ThriftClassLoader();$/;"	v
+lowbit	lib/Thrift/Protocol/TCompactProtocol.php	/^      $lowbit = ($lo >> 31) & 1;$/;"	v
+m	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^            $m = explode('\\\\', $class);$/;"	v
+md	lib/Thrift/Transport/THttpClient.php	/^      $md = stream_get_meta_data($this->handle_);$/;"	v
+methodname	gen-php/Img/ImgInfo.php	/^    $methodname = 'process_'.$fname;$/;"	v
+mtype	gen-php/Img/ImgInfo.php	/^      $mtype = 0;$/;"	v
+mtype	gen-php/Img/ImgInfo.php	/^    $mtype = 0;$/;"	v
+name	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $name = $this->trans_->readAll($sz);$/;"	v
+name	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $name = '';$/;"	v
+name	lib/Thrift/Protocol/TCompactProtocol.php	/^    $name = ''; \/\/ unused$/;"	v
+name	lib/Thrift/Protocol/TJSONProtocol.php	/^        $name = "";$/;"	v
+name	lib/Thrift/Protocol/TJSONProtocol.php	/^        $name = $this->readJSONString(false);$/;"	v
+name	lib/Thrift/TMultiplexedProcessor.php	/^        $name  = $this->fname_;$/;"	v
+nameWithService	lib/Thrift/Protocol/TMultiplexedProtocol.php	/^            $nameWithService = $this->serviceName_ . self::SEPARATOR . $name;$/;"	v
+namespace	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^            $namespace = implode('\\\\', $m);$/;"	v
+namespace	lib/Thrift/ClassLoader/ThriftClassLoader.php	/^            $namespace = substr($class, 0, $pos);$/;"	v
+neg	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $neg = $value < 0;$/;"	v
+neg	lib/Thrift/Protocol/TCompactProtocol.php	/^      $neg = $value < 0;$/;"	v
+null	lib/Thrift/Transport/TSocket.php	/^    $null = null;$/;"	v
+numServers	lib/Thrift/Transport/TSocketPool.php	/^    $numServers = count($this->servers_);$/;"	v
+object	lib/Thrift/Serializer/TBinarySerializer.php	/^       $object = new $class_name();$/;"	v
+old_values	lib/Thrift/Protocol/TCompactProtocol.php	/^    $old_values = array_pop($this->structs);$/;"	v
+options	lib/Thrift/Transport/THttpClient.php	/^    $options = array('method' => 'POST',$/;"	v
+out	lib/Thrift/Protocol/TCompactProtocol.php	/^      $out = "";$/;"	v
+out	lib/Thrift/Protocol/TCompactProtocol.php	/^    $out = "";$/;"	v
+out	lib/Thrift/Protocol/TCompactProtocol.php	/^    $out = $this->getVarint($data);$/;"	v
+out	lib/Thrift/Transport/TBufferedTransport.php	/^      $out = $this->wBuf_;$/;"	v
+out	lib/Thrift/Transport/TFramedTransport.php	/^      $out = $this->rBuf_;$/;"	v
+out	lib/Thrift/Transport/TFramedTransport.php	/^    $out = TStringFuncFactory::create()->substr($this->rBuf_, 0, $len);$/;"	v
+out	lib/Thrift/Transport/TFramedTransport.php	/^    $out = pack('N', TStringFuncFactory::create()->strlen($this->wBuf_));$/;"	v
+outputProtocol	lib/Thrift/Server/TForkingServer.php	/^      $outputProtocol = $this->outputProtocolFactory_->getProtocol($outputTransport);$/;"	v
+outputProtocol	lib/Thrift/Server/TSimpleServer.php	/^          $outputProtocol = $this->outputProtocolFactory_->getProtocol($outputTransport);$/;"	v
+outputTransport	lib/Thrift/Server/TForkingServer.php	/^      $outputTransport = $this->outputTransportFactory_->getTransport($transport);$/;"	v
+outputTransport	lib/Thrift/Server/TSimpleServer.php	/^          $outputTransport = $this->outputTransportFactory_->getTransport($transport);$/;"	v
+persist	lib/Thrift/Transport/TSocket.php	/^                              $persist=false,$/;"	v
+persist	lib/Thrift/Transport/TSocketPool.php	/^                              $persist=false,$/;"	v
+pid	lib/Thrift/Server/TForkingServer.php	/^          $pid = pcntl_fork();$/;"	v
+port	lib/Thrift/Transport/TSSLSocket.php	/^                              $port=9090,$/;"	v
+port	lib/Thrift/Transport/TSocket.php	/^                              $port=9090,$/;"	v
+port	lib/Thrift/Transport/TSocketPool.php	/^      $port = $ports;$/;"	v
+ports	lib/Thrift/Transport/TSocketPool.php	/^                              $ports=array(9090),$/;"	v
+ports	lib/Thrift/Transport/TSocketPool.php	/^      $ports = array();$/;"	v
+processor	lib/Thrift/TMultiplexedProcessor.php	/^        $processor = $this->serviceProcessorMap_[$serviceName];$/;"	v
+processor	server.php	/^$processor = new \\Img\\ImgInfoProcessor($handler);$/;"	v
+protoId	lib/Thrift/Protocol/TCompactProtocol.php	/^    $protoId = 0;$/;"	v
+protocol	client.php	/^    $protocol  = new TBinaryProtocol($transport);$/;"	v
+protocol	lib/Thrift/Serializer/TBinarySerializer.php	/^     $protocol = new TBinaryProtocolAccelerated($transport);$/;"	v
+protocol	lib/Thrift/Serializer/TBinarySerializer.php	/^    $protocol = new TBinaryProtocolAccelerated($transport);$/;"	v
+protocol	server.php	/^$protocol = new TBinaryProtocol($transport, true, true);$/;"	v
+protocolTransport	lib/Thrift/Serializer/TBinarySerializer.php	/^       $protocolTransport = $protocol->getTransport();$/;"	v
+ransport	server.php	/^$ransport = new TBufferedTransport(new TPhpStream(TPhpStream:MODE_R | TPhpStream::MODE_W));$/;"	v
+read	lib/Thrift/Transport/TSocket.php	/^    $read = array($this->handle_);$/;"	v
+readable	lib/Thrift/Transport/TSocket.php	/^    $readable = @stream_select($read, $null, $null, $this->recvTimeoutSec_, $this->recvTimeoutUsec_);$/;"	v
+result	gen-php/Img/ImgInfo.php	/^      $result = new \\Img\\ImgInfo_getimgInfo_result();$/;"	v
+result	gen-php/Img/ImgInfo.php	/^    $result = new \\Img\\ImgInfo_getimgInfo_result();$/;"	v
+result	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $result = $this->readByte($fieldType);$/;"	v
+result	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $result = $this->readI32($len);$/;"	v
+result	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $result = $this->readI32($sz);$/;"	v
+result	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $result = $this->writeI32($len);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = $this->readUByte($compact_type_and_delta);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = $this->readUByte($protoId);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = $this->readUByte($sizeType);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = $this->readVarint($len);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = $this->readVarint($size);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = $this->readVarint($value);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = $this->writeVarint($len);$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = 0;$/;"	v
+result	lib/Thrift/Protocol/TCompactProtocol.php	/^    $result = TStringFuncFactory::create()->strlen($out);$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                            $result = TType::BYTE;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                            $result = TType::I16;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                            $result = TType::I32;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                            $result = TType::I64;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                        $result = TType::SET;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                        $result = TType::STRING;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                    $result = TType::BOOL;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                    $result = TType::DOUBLE;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                    $result = TType::LST;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                    $result = TType::MAP;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^                    $result = TType::STRUCT;$/;"	v
+result	lib/Thrift/Protocol/TJSONProtocol.php	/^        $result = TType::STOP;$/;"	v
+result	lib/Thrift/Protocol/TProtocol.php	/^        $result = $this->readListBegin($elemType, $size);$/;"	v
+result	lib/Thrift/Protocol/TProtocol.php	/^        $result = $this->readMapBegin($keyType, $valType, $size);$/;"	v
+result	lib/Thrift/Protocol/TProtocol.php	/^        $result = $this->readSetBegin($elemType, $size);$/;"	v
+result	lib/Thrift/Protocol/TProtocol.php	/^        $result = $this->readStructBegin($name);$/;"	v
+result	lib/Thrift/Protocol/TProtocol.php	/^        $result = 0;$/;"	v
+result	lib/Thrift/Protocol/TProtocol.php	/^        $result = 5;$/;"	v
+result	lib/Thrift/Protocol/TProtocol.php	/^        $result = 6;$/;"	v
+ret	client.php	/^    $ret = $client->getimgInfo('BBBBBBBBBBBBBBBBBB');$/;"	v
+ret	lib/Thrift/Protocol/TCompactProtocol.php	/^      $ret = TStringFuncFactory::create()->strlen($out);$/;"	v
+ret	lib/Thrift/Transport/TBufferedTransport.php	/^      $ret = $this->rBuf_;$/;"	v
+ret	lib/Thrift/Transport/TBufferedTransport.php	/^    $ret = TStringFuncFactory::create()->substr($this->rBuf_, 0, $len);$/;"	v
+ret	lib/Thrift/Transport/TCurlClient.php	/^      $ret = substr($this->response_, 0, $len);$/;"	v
+ret	lib/Thrift/Transport/TMemoryBuffer.php	/^      $ret = $this->buf_;$/;"	v
+ret	lib/Thrift/Transport/TMemoryBuffer.php	/^    $ret = TStringFuncFactory::create()->substr($this->buf_, 0, $len);$/;"	v
+retryIntervalPassed	lib/Thrift/Transport/TSocketPool.php	/^          $retryIntervalPassed = true;$/;"	v
+retryIntervalPassed	lib/Thrift/Transport/TSocketPool.php	/^      $retryIntervalPassed = false;$/;"	v
+rseqid	gen-php/Img/ImgInfo.php	/^      $rseqid = 0;$/;"	v
+rseqid	gen-php/Img/ImgInfo.php	/^    $rseqid = 0;$/;"	v
+seqid	lib/Thrift/Protocol/TJSONProtocol.php	/^        $seqid = $this->readJSONInteger();$/;"	v
+seqid	lib/Thrift/TMultiplexedProcessor.php	/^        $seqid = $this->rseqid_;$/;"	v
+shift	lib/Thrift/Protocol/TCompactProtocol.php	/^    $shift = 0;$/;"	v
+size	lib/Thrift/Protocol/TCompactProtocol.php	/^    $size = $sizeType >> 4;$/;"	v
+size	lib/Thrift/Protocol/TJSONProtocol.php	/^        $size = $this->readJSONInteger();$/;"	v
+size	lib/Thrift/Protocol/TProtocol.php	/^          $size = 0 - (($size - 1) ^ 0xffffffff);$/;"	v
+size	lib/Thrift/Protocol/TProtocol.php	/^        $size = $arr[1];$/;"	v
+sizeType	lib/Thrift/Protocol/TCompactProtocol.php	/^    $sizeType = 0;$/;"	v
+socket	client.php	/^        $socket = new ThttpClient('localhost', 8080, 'server.php');    $/;"	v
+socket	client.php	/^        $socket = new Tsocket('localhost', 8080);    $/;"	v
+socket	lib/Thrift/Server/TSSLServerSocket.php	/^    $socket = new TSSLSocket();$/;"	v
+socket	lib/Thrift/Server/TServerSocket.php	/^    $socket = new TSocket();$/;"	v
+spec	lib/Thrift/Exception/TException.php	/^      $spec = $p1;$/;"	v
+ssl_host	lib/Thrift/Server/TSSLServerSocket.php	/^    $ssl_host = $this->getSSLHost($host);$/;"	v
+str	lib/Thrift/Protocol/TJSONProtocol.php	/^        $str = $this->readJSONNumericChars();$/;"	v
+str	lib/Thrift/Protocol/TJSONProtocol.php	/^        $str = $this->readJSONString(false);$/;"	v
+strbld	lib/Thrift/Protocol/TJSONProtocol.php	/^        $strbld = array();$/;"	v
+sz	lib/Thrift/Transport/TFramedTransport.php	/^    $sz = $val[1];$/;"	v
+thing	lib/Thrift/Protocol/TCompactProtocol.php	/^    $thing = $this->toZigZag($value, 16);$/;"	v
+thing	lib/Thrift/Protocol/TCompactProtocol.php	/^    $thing = $this->toZigZag($value, 32);$/;"	v
+trans	lib/Thrift/Protocol/TBinaryProtocolAccelerated.php	/^      $trans = new TBufferedTransport($trans);$/;"	v
+transport	client.php	/^    $transport = new TBufferedTransport($socket, 1024, 1024);$/;"	v
+transport	lib/Thrift/Serializer/TBinarySerializer.php	/^     $transport = new TMemoryBuffer();$/;"	v
+transport	lib/Thrift/Serializer/TBinarySerializer.php	/^    $transport = new TMemoryBuffer();$/;"	v
+transport	lib/Thrift/Server/TForkingServer.php	/^        $transport = $this->transport_->accept();$/;"	v
+transport	lib/Thrift/Server/TServerTransport.php	/^    $transport = $this->acceptImpl();$/;"	v
+transport	lib/Thrift/Server/TSimpleServer.php	/^        $transport = $this->transport_->accept();$/;"	v
+transport_protocol_loc	lib/Thrift/Server/TSSLServerSocket.php	/^    $transport_protocol_loc = strpos($host, ":\/\/");$/;"	v
+transport_protocol_loc	lib/Thrift/Transport/TSSLSocket.php	/^    $transport_protocol_loc = strpos($host, ":\/\/");$/;"	v
+type	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $type = $sz & 0x000000ff;$/;"	v
+type	lib/Thrift/Protocol/TCompactProtocol.php	/^    $type = $this->getTType($sizeType);$/;"	v
+type	lib/Thrift/Protocol/TCompactProtocol.php	/^    $type = ($verType >> TCompactProtocol::TYPE_SHIFT_AMOUNT) & TCompactProtocol::TYPE_BITS;$/;"	v
+type	lib/Thrift/Protocol/TJSONProtocol.php	/^        $type = $this->readJSONInteger();$/;"	v
+type	lib/Thrift/TMultiplexedProcessor.php	/^        $type  = $this->mtype_;$/;"	v
+types	lib/Thrift/Protocol/TCompactProtocol.php	/^    $types = 0;$/;"	v
+uri	lib/Thrift/Transport/TCurlClient.php	/^      $uri = '\/'.$uri;$/;"	v
+uri	lib/Thrift/Transport/THttpClient.php	/^      $uri = '\/'.$uri;$/;"	v
+val	lib/Thrift/Base/TBase.php	/^          $val = new $class();$/;"	v
+val	lib/Thrift/Exception/TException.php	/^          $val = new $class();$/;"	v
+val	lib/Thrift/Transport/TFramedTransport.php	/^    $val = unpack('N', $buf);$/;"	v
+valType	lib/Thrift/Protocol/TJSONProtocol.php	/^        $valType = $this->getTypeIDForTypeName($this->readJSONString(false));$/;"	v
+val_type	lib/Thrift/Protocol/TCompactProtocol.php	/^    $val_type = $this->getTType($types);$/;"	v
+vals	lib/Thrift/Exception/TException.php	/^      $vals = $p2;$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $value = $arr[1]*4294967296 + $arr[2];$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $value = 0 - $arr[1]*4294967296 - $arr[2] - 1;$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^        $value = 0 - $value;$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $value = $hi * 4294967296 + $lo;$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $value = $this->trans_->readAll($len);$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $value = '';$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $value = 0 - (($value - 1) ^ 0xffff);$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $value = 0 - (($value - 1) ^ 0xffffffff);$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $value = $arr[1] == 1;$/;"	v
+value	lib/Thrift/Protocol/TBinaryProtocol.php	/^    $value = $arr[1];$/;"	v
+value	lib/Thrift/Protocol/TCompactProtocol.php	/^      $value = $this->boolValue;$/;"	v
+value	lib/Thrift/Protocol/TCompactProtocol.php	/^      $value = $this->trans_->readAll($len);$/;"	v
+value	lib/Thrift/Protocol/TCompactProtocol.php	/^      $value = '';$/;"	v
+value	lib/Thrift/Protocol/TCompactProtocol.php	/^      $value = -$value;$/;"	v
+value	lib/Thrift/Protocol/TCompactProtocol.php	/^    $value = $arr[1];$/;"	v
+value	lib/Thrift/Protocol/TCompactProtocol.php	/^    $value = $this->fromZigZag($value);$/;"	v
+value	lib/Thrift/Protocol/TCompactProtocol.php	/^    $value = -$hi * 4294967296 - $lo;$/;"	v
+var	lib/Thrift/Base/TBase.php	/^        $var = $fspec['var'];$/;"	v
+var	lib/Thrift/Base/TBase.php	/^      $var = $fspec['var'];$/;"	v
+var	lib/Thrift/Base/TBase.php	/^    $var = array();$/;"	v
+var	lib/Thrift/Exception/TException.php	/^        $var = $fspec['var'];$/;"	v
+var	lib/Thrift/Exception/TException.php	/^      $var = $fspec['var'];$/;"	v
+var	lib/Thrift/Exception/TException.php	/^    $var = array();$/;"	v
+verType	lib/Thrift/Protocol/TCompactProtocol.php	/^    $verType = 0;$/;"	v
+version	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $version = (int) ($sz & self::VERSION_MASK);$/;"	v
+version	lib/Thrift/Protocol/TBinaryProtocol.php	/^      $version = self::VERSION_1 | $type;$/;"	v
+version	lib/Thrift/Protocol/TCompactProtocol.php	/^    $version = $verType & TCompactProtocol::VERSION_MASK;$/;"	v
+vread	lib/Thrift/Base/TBase.php	/^      $vread = 'read'.TBase::$tmethod[$vtype];$/;"	v
+vread	lib/Thrift/Exception/TException.php	/^      $vread = 'read'.TBase::$tmethod[$vtype];$/;"	v
+vspec	lib/Thrift/Base/TBase.php	/^      $vspec = $spec['val'];$/;"	v
+vspec	lib/Thrift/Exception/TException.php	/^      $vspec = $spec['val'];$/;"	v
+vtype	lib/Thrift/Base/TBase.php	/^    $vtype = $spec['vtype'];$/;"	v
+vtype	lib/Thrift/Exception/TException.php	/^    $vtype = $spec['vtype'];$/;"	v
+vtype	lib/Thrift/Protocol/TProtocol.php	/^        $vtype = $arr[1];$/;"	v
+vwrite	lib/Thrift/Base/TBase.php	/^      $vwrite = 'write'.TBase::$tmethod[$vtype];$/;"	v
+vwrite	lib/Thrift/Exception/TException.php	/^      $vwrite = 'write'.TBase::$tmethod[$vtype];$/;"	v
+writable	lib/Thrift/Transport/TSocket.php	/^      $writable = @stream_select($null, $write, $null, $this->sendTimeoutSec_, $this->sendTimeoutUsec_);$/;"	v
+write	lib/Thrift/Transport/TSocket.php	/^    $write = array($this->handle_);$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^      $written = $this->writeByte($type) +$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^      $written = $this->writeByte(0);$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^      $written = $this->writeUByte($size << 4 |$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^      $written = $this->writeUByte(($delta << 4) | $type);$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^      $written = $this->writeUByte(0xf0 |$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^      $written = $this->writeVarint($size) +$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^    $written = 0;$/;"	v
+written	lib/Thrift/Protocol/TCompactProtocol.php	/^    $written =$/;"	v
+written	lib/Thrift/Transport/TSocket.php	/^        $written = fwrite($this->handle_, $buf);$/;"	v
+x	gen-php/Img/ImgInfo.php	/^        $x = new TApplicationException();$/;"	v
+x	gen-php/Img/ImgInfo.php	/^      $x = new TApplicationException('Function '.$fname.' not implemented.', TApplicationException::UNKNOWN_METHOD);$/;"	v
+x	lib/Thrift/Protocol/TCompactProtocol.php	/^      $x = $this->trans_->readAll(1);$/;"	v
+xfer	gen-php/Img/ImgInfo.php	/^    $xfer = 0;$/;"	v
+xfer	lib/Thrift/Base/TBase.php	/^          $xfer = 0;$/;"	v
+xfer	lib/Thrift/Base/TBase.php	/^    $xfer = 0;$/;"	v
+xfer	lib/Thrift/Exception/TApplicationException.php	/^    $xfer = 0;$/;"	v
+xfer	lib/Thrift/Exception/TException.php	/^          $xfer = 0;$/;"	v
+xfer	lib/Thrift/Exception/TException.php	/^    $xfer = 0;$/;"	v
+xorer	lib/Thrift/Protocol/TCompactProtocol.php	/^        $xorer = 0xffffffff;$/;"	v
+xorer	lib/Thrift/Protocol/TCompactProtocol.php	/^      $xorer = 0;$/;"	v
+xorer	lib/Thrift/Protocol/TCompactProtocol.php	/^      $xorer = 0xffffffff;$/;"	v
+xorer	lib/Thrift/Protocol/TCompactProtocol.php	/^    $xorer = 0;$/;"	v
