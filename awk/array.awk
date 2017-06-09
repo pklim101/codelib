@@ -24,6 +24,12 @@ BEGIN{
     }
 
     for(i in p){
-        print p[i]    
+        #print p[i]    
     }
+    
+    #以下方式错误.
+    #for(i in p["t"]){
+        #print i
+        #print p["t"][i]    
+    #}
 }
