@@ -20,7 +20,7 @@ BEGIN{
     arr["a","b","c"]--;
     for(one in arr){   #这里的one相当于["a","b","c"]
         split(one,arr2,SUBSEP);
-        #print arr2[1],arr2[2],arr2[3],arr[one]
+        print arr2[1],arr2[2],arr2[3],arr[one]
     }
 
     for(i in p){
