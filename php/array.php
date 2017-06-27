@@ -134,7 +134,14 @@ function unsetArr(){
 }
 //unsetArr();
 
-
+function shift(){
+    //$arr = array('apple'=>'fruit','tools'=>'phone');    
+    //$arr = array(); // NULL
+    $arr = ''; //warning.  param must be a array.
+    $t = array_shift($arr);
+    var_dump($t);
+}
+//shift();
 
 
 

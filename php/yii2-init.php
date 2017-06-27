@@ -13,7 +13,6 @@ class A{
         echo "this is class A counstruct.\n";    
         $this->init();
     }    
-
 }
 
 class B extends A{
@@ -22,4 +21,10 @@ class B extends A{
     }    
 }
 
-$p = new B();
+class C extends B{
+    function init(){
+        echo "this is class C init.\n";    
+    }    
+}
+
+$p = new C();
