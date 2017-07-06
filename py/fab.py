@@ -50,6 +50,9 @@ class Fab(object):
         return self
 
     # python3里next()应该为__next__()
+    ###
+    # 疑惑:将next()改为nexta()，去掉raise StopIteration(),都可以通过p.nexta()迭代.
+    ##
     def next(self):
         if self.n < self.m:
             r = self.b
