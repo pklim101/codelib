@@ -1,0 +1,48 @@
+###############
+# vim ~/.gitconfig
+##############
+#
+# 将git命令简化
+
+
+[user]    
+    name = Enming Xie    
+    email = enming.xie@blabla.fr
+[color]    
+    ui = auto
+[alias]    
+    st = status    
+    pl = pull --ff-only    
+    ps = push    
+    co = checkout    
+    ci = commit    
+    df = difftool    
+    cp = cherry-pick    
+    ca = commit --amend    
+    br = branch    
+    l = log --stat    
+    last = log -1    
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit    
+    up = push origin    
+    lf = log --follow -p    
+    aa = ls-files --modified    
+    su = status -uno    
+    cm = commit -m    
+    uf = push origin -f    
+    cl = clean -fdx    
+    fe = fetch --prune    
+    cf = clean -fdx    
+    bd = branch -D    
+    cb = checkout -b
+[push]    
+    default = simple
+[core]    
+    editor = vim    pager = less -+F
+[diff]    
+    tool = meld
+[difftool]    
+    prompt = false
+[merge]    
+    tool = meld
+[init]    
+    templatedir = ~/.git_template
