@@ -64,6 +64,16 @@ class A{
     }
 
     /**
+    触发条件：当调用的类方法不存在时触发.
+    @params $name String class method name.
+    @params $params Array parameters.from the second parameter to the end are method parameters in a array.
+    */
+    public function __call($name, $params){
+        echo "this is a called class method non-existent.\n";
+        print_r($params);
+    }
+
+    /**
     触发条件：unserialize
      @params无参数
      @return array  必须返回一个包含若干类属性的数组.
@@ -95,6 +105,8 @@ echo $p;
 
 var_export($p);
 
+$p->calltest(111,222,333);
+
 
 $p1 = clone $p; //深拷贝
 $p2 = $p;    //浅拷贝
@@ -103,3 +115,4 @@ var_dump($p,$p1,$p2);
 var_dump($s = serialize($p));
 
 var_dump(unserialize($s));
+
