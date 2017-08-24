@@ -1,7 +1,7 @@
 #!/bin/awk -f
 BEGIN{
         IGNORECASE=1;
-        "/sbin/ifconfig eth1 |grep \"inet addr\"| cut -f 2 -d \":\"|cut -f 1 -d \" \""|getline proxyIP;
+        #"/sbin/ifconfig eth1 |grep \"inet addr\"| cut -f 2 -d \":\"|cut -f 1 -d \" \""|getline proxyIP;
         "/sbin/ifconfig eth0 |grep \"inet addr\"| cut -f 2 -d \":\"|cut -f 1 -d \" \""|getline localIP;
         "/bin/hostname |  egrep -o '(bjcc|bjdt|bjsc|gzst|shgt|shjc|shyc2|shbt|zwt|zzzc|zzbc)'"|getline localIdc;
         "date +%Y%m%d%H%M -d \"-1 mins\""|getline timeToDB
@@ -59,11 +59,13 @@ END{
                 split(one,tmpArr,SUBSEP);
                 url=tmpArr[1];
                 httpCode=tmpArr[2];
+                adSucc=tmpArr[4];
                 count=urlHttpcodeCount[one];
                 if(match(httpCode,"2[0-9][0-9]|3[0-9][0-9]")){
                         sucCount[url]+=count;#存url成功数
                 }
                 urlCount[url]+=count;#存url总数
+                urlCountSucc[url,adSucc]+=count;
         }
         for(one in urlCount){
                 if(sucCount[one]==""){
@@ -79,10 +81,12 @@ END{
                 split(one,tmpArr,SUBSEP);
                 url=tmpArr[1];
                 httpCode=tmpArr[2];
+                adSucc=tmpArr[4];
                 count=urlHttpcodeCount[one];
                 avg_time=urlHttpcodeTime[one]/count;
                 total_time=urlHttpcodeTime[one];
-                total_all=urlCount[url];
+                total_all=urlCountSucc[url,adSucc];
+                #print url,httpCode,count,total_all
 		#计算response time在99和50比例时候的值
                 delete tmp;
                 delete sortRt;
@@ -102,12 +106,13 @@ END{
                 }else{
                     adSuccSum = 0;
                 }
+                print "http://10.172.171.234/frontToDataIdc.php?time="timeToDB"&url="url"&action=front&idc="localIdc"&ip="localIP"&http_code="httpCode"&total="count"&avg_time="avg_time"&total_time="total_time"&total_all="total_all"&rt_99="sortRt[rt_99_index]"&rt_50="sortRt[rt_50_index]"&adsucc="adSuccSum
                 #printf("url:%-48shttp-code:%-5scount:%-10stotal_all:%-10dlag:%-5s\n",url,httpCode,urlHttpcodeCount[one],total_all,urlHttpcodeTime[one]/count);
                 #在此处入库字段:timeToDB url proxy localIP httpCode count urlHttpcodeTime[one]/count urlHttpcodeTime[one]
                 #"curl -X POST -d \"time="timeToDB"&url="url"&action=front&ip="localIP"&http_code="httpCode"&total="count"&avg_time="avg_time"&total_time="total_time"&total_all="total_all"\" http://123.125.73.218/frontToData.php > /dev/null 2>&1"|getline
                # "curl \"http://123.125.73.218/frontToDataIdc.php?time="timeToDB"&url="url"&action=front&idc="localIdc"&ip="localIP"&http_code="httpCode"&total="count"&avg_time="avg_time"&total_time="total_time"&total_all="total_all"\" > /dev/null 2>&1"|getline
-                "curl \"http://10.172.171.234/frontToDataIdc.php?time="timeToDB"&url="url"&action=front&idc="localIdc"&ip="localIP"&http_code="httpCode"&total="count"&avg_time="avg_time"&total_time="total_time"&total_all="total_all"\" > /dev/null 2>&1"|getline
-                "curl -H \"Host: wyz.monitor.com\" \"http://10.172.171.234/frontToDataIdc.php?time="timeToDB"&url="url"&action=front&idc="localIdc"&ip="localIP"&http_code="httpCode"&total="count"&avg_time="avg_time"&total_time="total_time"&total_all="total_all"&rt_99="sortRt[rt_99_index]"&rt_50="sortRt[rt_50_index]"&adsucc="adSuccSum"\" > /dev/null 2>&1"|getline
+                #"curl \"http://10.172.171.234/frontToDataIdc.php?time="timeToDB"&url="url"&action=front&idc="localIdc"&ip="localIP"&http_code="httpCode"&total="count"&avg_time="avg_time"&total_time="total_time"&total_all="total_all"\" > /dev/null 2>&1"|getline
+                #"curl -H \"Host: wyz.monitor.com\" \"http://10.172.171.234/frontToDataIdc.php?time="timeToDB"&url="url"&action=front&idc="localIdc"&ip="localIP"&http_code="httpCode"&total="count"&avg_time="avg_time"&total_time="total_time"&total_all="total_all"&rt_99="sortRt[rt_99_index]"&rt_50="sortRt[rt_50_index]"&adsucc="adSuccSum"\" > /dev/null 2>&1"|getline
         }
         if(lineCount>0){
                 close("123.txt");
