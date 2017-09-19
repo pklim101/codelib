@@ -1,4 +1,6 @@
  <?php
+
+// 详细讲解，带源码分析：http://blog.csdn.net/fwkjdaghappy1/article/details/7457687
 function profile()
 {
     global $tmp;
