@@ -4,7 +4,6 @@ typedef与define的区别：
 2.typedef在编译阶段处理，而define在预处理阶段处理.
 */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
