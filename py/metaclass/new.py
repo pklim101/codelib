@@ -14,3 +14,10 @@ class UpperAttrMetaclass(type):
         uppercase_attr = dict((name.upper(), value) for name, value in attrs)
         return super(UpperAttrMetaclass, cls).__new__(cls, name, bases, uppercase_attr)
 
+#python2.7这里怎么写呢？
+class myUp(metaclass=UpperAttrMetaclass)
+    bar = 'bip'
+
+p = myUp()
+print hasattr(p,'bar')
+
