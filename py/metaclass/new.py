@@ -15,9 +15,13 @@ class UpperAttrMetaclass(type):
         return super(UpperAttrMetaclass, cls).__new__(cls, name, bases, uppercase_attr)
 
 #python2.7这里怎么写呢？
-class myUp(metaclass=UpperAttrMetaclass)
+#class myUp(metaclass=UpperAttrMetaclass)  #这是python3.x的写法
+class myUp():  
+    __metaclass__=UpperAttrMetaclass
     bar = 'bip'
 
 p = myUp()
 print hasattr(p,'bar')
+print hasattr(p,'BAR')
+print p.BAR
 
