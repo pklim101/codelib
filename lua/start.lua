@@ -53,16 +53,12 @@ LUA_PATH设置方法：打开.bashrc，加上
 export LUA_PATH="~/lua/?.lua;;"    #文件路径以 ";" 号分隔，最后的 2 个 ";;" 表示新加的路径后面加上原来的默认路径。
 然后执行source ~/.bashrc
 
-
-
-
-
-
 --]=]
 
 
-print(b)
+print(b)   --nil
 local tbl = {"apple","orange",'water'}
-print(tbl[1])
-print(#tbl)
+print(tbl[0])  --nil
+print(tbl[1])  --apple
+print(#tbl)    --3
 
