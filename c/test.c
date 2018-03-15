@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
 
-// the first sample
-// gcc test.c -o a.o
+/*
+*/
 
 int main(){
-    int a = 123;
-    printf("a value is : %d \n",a);
+    short int a = 32769;
+    printf("length : %d\n value : %d\n", sizeof(a), a);
 }
+
