@@ -283,7 +283,7 @@ for i, num := range nums {
 
 2. 定义：
 - /* 声明变量，默认 map 是 nil */
-- var map_variable map[key_data_type]value_data_type
+- var map_variable map[key_data_type]value_data_type `【但是这样声明后，依然需要map_variable = make(map[key_data_type]value_data_type这样创建map】`
 
 - /* 使用 make 函数 */
 - map_variable := make(map[key_data_type]value_data_type) 
@@ -314,6 +314,7 @@ float32(sum)
 
 十三、接口 - truct + 方法 =>实现对象.
 1. 概念：接口是把所有的具有共性的方法定义在一起，任何其他类型只要实现了这些方法就是实现了这个接口.
+-- `通俗理解：1. 把struct的声明当作类，故有p := new(结构体类型)； 2. 把struct里的变量看作成员变量； 3. 声明一个匿名函数，参数传入struct的类型名，同时加上方法名【该方法名即为该new的对象的方法】.`
 
 2. 定义
 ```go
