@@ -140,7 +140,7 @@ const (
 何返回值，也可以省略这些内容；
 6. 这是函数体，注意return 是一个语句，所以包裹参数的括号是可选的。
 
-### 返回值个数
+### 详解函数
 1. 返回单个值
 ```go
 /* 函数返回两个数的最大值 */
@@ -214,6 +214,57 @@ func main() {
 func (c Circle) getArea() float64 {   //重点：这里相当于把getArea()方法看作是c这个结构体的方法.
   //c.radius 即为 Circle 类型对象中的属性
   return 3.14 * c.radius * c.radius
+}
+```
+
+5. 定义函数退出前执行的函数
+例如在打开文件的时候，每一次返回都需要关闭文件描述符，这样会有大量代码重复，在go中，可以定义函数退出前执行的函数。
+```
+func test(a int) (sum int){
+    defer print("test done")
+    if a<0{
+        return -1
+    }else{
+        return 1
+    }
+}
+```
+这样无论a是大于还是小于0，都会输出文字。
+
+6. 可变参数
+类似于Python的*args
+```
+func test(args ...int) (int) {
+    for i, v := range args {
+        print(i, v, "\n")
+    }
+    return 1
+}
+func main() {
+    test(1, 2, 3, 4, 5)
+}
+```
+
+7. 快速定义函数
+类似于Python的lambda
+```
+add_one := func(i int) int {
+    return 1 + i
+}
+print(add_one(2))
+```
+
+8.函数作为参数
+```
+func test(i int, fun func(int) int) (int) {
+    i++
+    return fun(i)
+}
+func main() {
+    add_one := func(i int) int {
+        return 1 + i
+    }
+    print(test(2,add_one))
 }
 ```
 
