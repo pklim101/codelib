@@ -447,7 +447,48 @@ type error interface {
 1. LiteIDE
 2. Eclipse + goclipse + gocode(gocode插件，用于go的代码补全提示)
 
+## 十七、恐慌和恢复
+- go中没有异常的处理，只有恐慌和恢复
+```
+func thrownPanic(fun func() int) (b bool) {
+    defer func() {
+        if r := recover(); r != nil {
+            b = true
+        }
+    }()
+    fun()
+    return
+}
+func main() {
+    add_one := func() int {
+        a := []int{1, 2, 3}
+        print(a[0])
+        return 1
+    }
+    print(thrownPanic(add_one))
+}
+```
+在thrownPanic中，会调用fun，然后在函数结束前执行defer的函数，如果fun中产生了异常，r会为非nil，这样返回true，否则返回false
+这样外层的函数就能知道调用fun是否产生了异常。
 
+    "runtime/debug"
+    "reflect"
+    "fmt"
+)
+func test_func(){
+    defer func(){
+        if err:=recover();err!=nil{
+            fmt.Println("Panic ",err,reflect.TypeOf(err))
+            debug.PrintStack()
+        }
+    }()
+    list:=[]int{1}
+    println(list[1])
+}
+func main(){
+    test_func()
+
+程序在执行println(list[1])的时候，会产生恐慌，也就是异常，但是程序不会立刻退出，还会执行defer的函数，这时，`通过revocer函数，可以catch住这个异常，然后把异常信息打印出来，这样程序可以继续正常运行，其实跟try catch差不多`。
 
 
 
