@@ -206,6 +206,16 @@ func (c Circle) getArea() float64 {   //重点：这里相当于把getArea()方�
 }
 ```
 
+## 预定义函数
+- len 和cap 可用于不同的类型，len 用于返回字符串、slice 和数组的长度。参阅”array、slices和map”。
+- new 用于各种类型的内存分配。参阅”用new 分配内存”。
+- make 用于内建类型（map、slice 和channel）的内存分配。参阅”用make 分配内存”。
+- copy 用于复制slice。append 用于追加slice。。
+- panic 和recover 用于异常处理机制。参阅”恐慌（Panic）和恢复（Recover）” 。
+- print 和println 是底层打印函数，可以在不引入fmt 包的情况下使用。它们主要用于调
+试。
+- complex、real和imag 全部用于处理复数。
+
 ## 六、数组
 1. 数组是具有相同唯一类型的一组已编号且长度固定的数据项序列.
 
