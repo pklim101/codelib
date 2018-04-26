@@ -596,4 +596,14 @@ if err != nil {
     panic(err)
 }
 fmt.Printf("%d\n", wint)
+_, err = fp.Seek(0, 0)
+if err != nil {
+    panic(err)
+}
+bs := make([]byte, 100)
+rint, err := fp.Read(bs)
+if err != nil {
+    panic(err)
+}
+fmt.Printf("%d, %s\n", rint, bs)
 ```
