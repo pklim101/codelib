@@ -581,3 +581,19 @@ func httpDo() {
 - head请求
 - 可以直接使用http client的head方法。
 
+## 文件读写
+1. os.OpenFile与fp.WriteString写字符串.
+```go
+filename:="xxx.txt"
+str:="hello world!"
+fp, err := os.OpenFile(filename, os.O_RDWR | os.O_CREATE | os.O_APPEND, 0x644)
+if err != nil {
+    panic(err)
+}
+defer fp.Close()
+wint, err := fp.WriteString(str)
+if err != nil {
+    panic(err)
+}
+fmt.Printf("%d\n", wint)
+```
