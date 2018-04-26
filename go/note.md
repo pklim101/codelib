@@ -491,6 +491,93 @@ func main(){
 程序在执行println(list[1])的时候，会产生恐慌，也就是异常，但是程序不会立刻退出，还会执行defer的函数，这时，`通过revocer函数，可以catch住这个异常，然后把异常信息打印出来，这样程序可以继续正常运行，其实跟try catch差不多`。
 
 
+## HTTP GET/POST请求
+- GET请求
+- get请求可以直接http.Get方法，非常简单。
+```go
+func httpGet() {
+    resp, err := http.Get("http://www.xxx.com/demo/accept.php?id=1")
+    if err != nil {
+        // handle error
+    }
+ 
+    defer resp.Body.Close()
+    body, err := ioutil.ReadAll(resp.Body)
+    if err != nil {
+        // handle error
+    }
+ 
+    fmt.Println(string(body))
+}
+```
+- post请求
+1. 一种是使用http.Post方式
+- Tips：使用这个方法的话，第二个参数要设置成”application/x-www-form-urlencoded”，否则post参数无法传递。
+```go
+func httpPost() {
+    resp, err := http.Post("http://www.xxx.com/demo/accept.php",
+        "application/x-www-form-urlencoded",
+        strings.NewReader("name=cjb"))
+    if err != nil {
+        fmt.Println(err)
+    }
+ 
+    defer resp.Body.Close()
+    body, err := ioutil.ReadAll(resp.Body)
+    if err != nil {
+        // handle error
+    }
+ 
+    fmt.Println(string(body))
+}
+```
+2. 一种是使用http.PostForm方法
+```php
+func httpPostForm() {
+    resp, err := http.PostForm("http://www.xxx.com/demo/accept.php",
+        url.Values{"key": {"Value"}, "id": {"123"}})
+ 
+    if err != nil {
+        // handle error
+    }
+ 
+    defer resp.Body.Close()
+    body, err := ioutil.ReadAll(resp.Body)
+    if err != nil {
+        // handle error
+    }
+ 
+    fmt.Println(string(body))
+ 
+}
 
-
+- 复杂请求
+- 有时需要在请求的时候设置头参数、cookie之类的数据，就可以使用http.Do方法。
+- 同上面的post请求，必须要设定Content-Type为application/x-www-form-urlencoded，post参数才可正常传递。
+```go
+func httpDo() {
+    client := &http.Client{}
+ 
+    req, err := http.NewRequest("POST", "http://www.xxx.com/demo/accept.php", strings.NewReader("name=cjb"))
+    if err != nil {
+        // handle error
+    }
+ 
+    req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+    req.Header.Set("Cookie", "name=anny")
+ 
+    resp, err := client.Do(req)
+ 
+    defer resp.Body.Close()
+ 
+    body, err := ioutil.ReadAll(resp.Body)
+    if err != nil {
+        // handle error
+    }
+ 
+    fmt.Println(string(body))
+}
+```
+- head请求
+- 可以直接使用http client的head方法。
 
