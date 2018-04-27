@@ -283,7 +283,9 @@ func main() {
 
 2. 数组声明：数组声明需要指定元素类型及元素个数. var balance [10] float32
 
-3.初始化数组：var balance = [5]float32{1000.0, 2.0, 3.4, 7.0, 50.0}
+3. 初始化数组：var balance = [5]float32{1000.0, 2.0, 3.4, 7.0, 50.0}
+
+4. 声明byte类型的字节数组：var result []byte
 
 ## 七、指针
 1. 指针声明：var fp *float32   //* 号用于指定变量是作为一个指针
