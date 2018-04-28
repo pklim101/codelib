@@ -235,7 +235,7 @@ func test(a int) (sum int){
 类似于Python的*args
 ```
 func test(args ...int) (int) {
-    for i, v := range args {
+    for i, v := range args {  //i为key，num为value；如果省略i，则num为value.最好的办法是，如果不要key，则用_占位.
         print(i, v, "\n")
     }
     return 1
