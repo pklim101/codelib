@@ -80,6 +80,18 @@ hello!
 5. 派生类型：指针(pointer)、数组、结构化(struct)、Channel、切片、接口(interface)、Map.
 6. go 1.9版本对于数字类型，无需定义int及float32、float64，系统会自动识别。 
 
+```go
+type Rect struct {
+    x, y float64
+    width, height float64
+}
+
+初始化方法：
+rect1 := new(Rect)
+rect2 := &Rect{}
+rect3 := &Rect{0, 0, 100, 200}
+rect4 := &Rect{width:100, height:200}
+```
 ## 二、变量
 1. 格式： var identifier type  
 - var name string = "Tom"
