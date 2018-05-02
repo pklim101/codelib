@@ -493,6 +493,49 @@ func main(){
 程序在执行println(list[1])的时候，会产生恐慌，也就是异常，但是程序不会立刻退出，还会执行defer的函数，这时，`通过revocer函数，可以catch住这个异常，然后把异常信息打印出来，这样程序可以继续正常运行，其实跟try catch差不多`。
 
 
+## 时间time
+- 获取时间戳用time.Now().Unix()
+- 格式化时间用t.Format
+- 解析时间用time.Parse
+> 模版2006-01-02格式，这些数字都是有特殊函义的，不是随便指定的数字，见下面列表：
+> 月份 1,01,Jan,January  
+> 日　 2,02,_2    
+> 时　 3,03,15,PM,pm,AM,am  
+> 分　 4,04  
+> 秒　 5,05  
+> 年　 06,2006  
+> 周几 Mon,Monday                                                                                                                                                                                                    
+> 时区时差表示 -07,-0700,Z0700,Z07:00,-07:00,MST  
+> 时区字母缩写 MST  
+```go
+import (
+    "fmt"
+    "time"
+)
+func main() {
+    //获取时间戳
+    timestamp := time.Now().Unix()
+    fmt.Println(timestamp)  //当前10位时间戳
+
+    //格式化为字符串,tm为Time类型
+    tm := time.Unix(timestamp, 0)  //原型：func Unix(sec int64, nsec int64) Time                                                    
+
+    fmt.Println(tm.Format("2006-01-02 03:04:05 PM"))  //"2006-01-02 03:04:05 PM"是格式模版
+    fmt.Println(tm.Format("02/01/2006 15:04:05 PM"))
+
+    //从字符串转为时间戳，第一个参数是格式，第二个是要转换的时间字符串
+    tm2, _ := time.Parse("01/02/2006", "02/08/2015")
+    fmt.Println(tm2.Unix())
+/**
+输出结果：
+1423361979
+2015-02-08 10:19:39 AM
+08/02/2015 10:19:39 AM
+1423353600
+}
+*/
+```
+
 ## HTTP GET/POST请求
 - GET请求
 - get请求可以直接http.Get方法，非常简单。
