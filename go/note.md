@@ -808,3 +808,66 @@ func main() {
     d := map[string]int{"apple": 5, "orange": 7}
     enc.Encode(d) //{"apple":5,"orange":7}
 ```
+
+## kafka
+```go
+package main
+import (
+	"fmt"
+	"os"
+	"time"
+	"github.com/Shopify/sarama"
+	"github.com/bsm/sarama-cluster" //support automatic consumer-group rebalancing and offset tracking
+	"github.com/sdbaiguanghe/glog"
+)
+
+var (
+	topics = "xxx-topic"
+)
+
+// consumer 消费者
+func consumer() {
+	//init consumer config, enable errors and notifications.
+	groupID := "group-1"
+	config := cluster.NewConfig()
+	config.Group.Return.Notifications = true
+	config.Consumer.Return.Errors = true
+	config.Consumer.Offsets.CommitInterval = 1 * time.Second
+	config.Consumer.Offsets.Initial = sarama.OffsetNewest //初始从最新的offset开始
+
+	// init consumer
+	brokers := []string{"10.10.101.100:10010"}
+	topics := []string{"xxx-topic"}
+	c, err := cluster.NewConsumer(brokers, groupID, topics, config)
+
+	if err != nil {
+		glog.Errorf("Failed open consumer: %v", err)
+		return
+		panic(err)
+	}
+	defer c.Close()
+
+	go func(c *cluster.Consumer) {
+		errors := c.Errors()
+		noti := c.Notifications()
+		for {
+			select {
+			case err := <-errors:
+				glog.Errorln(err)
+			case <-noti:
+			}
+		}
+	}(c)
+
+	fmt.Println("start consume...")
+	for msg := range c.Messages() {
+		fmt.Fprintf(os.Stdout, "%s/%d/%d\t%s\n", msg.Topic, msg.Partition, msg.Offset, msg.Value)
+		c.MarkOffset(msg, "") //MarkOffset 并不是实时写入kafka，有可能在程序crash时丢掉未提交的offset
+	}
+	fmt.Println("end consume")
+}
+
+func main() {
+	consumer()
+}
+```
