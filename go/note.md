@@ -871,3 +871,20 @@ func main() {
 	consumer()
 }
 ```
+
+## log
+```go
+import (
+    "log"
+    "os"
+)
+
+func main() {
+    log.SetFlags(log.Ldate | log.Ltime | log.Llongfile)
+    log.SetPrefix("TASK\t")
+    logFile, _ := os.OpenFile("a.log", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0664)
+    log.SetOutput(logFile)
+    log.Println("hahahahah")
+    log.Println(log.Prefix())                                                                                                                                                                                    
+}
+```
