@@ -80,6 +80,18 @@ hello!
 5. 派生类型：指针(pointer)、数组、结构化(struct)、Channel、切片、接口(interface)、Map.
 6. go 1.9版本对于数字类型，无需定义int及float32、float64，系统会自动识别。 
 
+```go
+type Rect struct {
+    x, y float64
+    width, height float64
+}
+
+初始化方法：
+rect1 := new(Rect)
+rect2 := &Rect{}
+rect3 := &Rect{0, 0, 100, 200}
+rect4 := &Rect{width:100, height:200}
+```
 ## 二、变量
 1. 格式： var identifier type  
 - var name string = "Tom"
@@ -493,6 +505,49 @@ func main(){
 程序在执行println(list[1])的时候，会产生恐慌，也就是异常，但是程序不会立刻退出，还会执行defer的函数，这时，`通过revocer函数，可以catch住这个异常，然后把异常信息打印出来，这样程序可以继续正常运行，其实跟try catch差不多`。
 
 
+## 时间time
+- 获取时间戳用time.Now().Unix()
+- 格式化时间用t.Format
+- 解析时间用time.Parse
+> 模版2006-01-02格式，这些数字都是有特殊函义的，不是随便指定的数字，见下面列表：
+> 月份 1,01,Jan,January  
+> 日　 2,02,_2    
+> 时　 3,03,15,PM,pm,AM,am  
+> 分　 4,04  
+> 秒　 5,05  
+> 年　 06,2006  
+> 周几 Mon,Monday                                                                                                                                                                                                    
+> 时区时差表示 -07,-0700,Z0700,Z07:00,-07:00,MST  
+> 时区字母缩写 MST  
+```go
+import (
+    "fmt"
+    "time"
+)
+func main() {
+    //获取时间戳
+    timestamp := time.Now().Unix()
+    fmt.Println(timestamp)  //当前10位时间戳
+
+    //格式化为字符串,tm为Time类型
+    tm := time.Unix(timestamp, 0)  //原型：func Unix(sec int64, nsec int64) Time                                                    
+
+    fmt.Println(tm.Format("2006-01-02 03:04:05 PM"))  //"2006-01-02 03:04:05 PM"是格式模版
+    fmt.Println(tm.Format("02/01/2006 15:04:05 PM"))
+
+    //从字符串转为时间戳，第一个参数是格式，第二个是要转换的时间字符串
+    tm2, _ := time.Parse("01/02/2006", "02/08/2015")
+    fmt.Println(tm2.Unix())
+/**
+输出结果：
+1423361979
+2015-02-08 10:19:39 AM
+08/02/2015 10:19:39 AM
+1423353600
+}
+*/
+```
+
 ## HTTP GET/POST请求
 - GET请求
 - get请求可以直接http.Get方法，非常简单。
@@ -608,4 +663,228 @@ if err != nil {
     panic(err)
 }
 fmt.Printf("%d, %s\n", rint, bs)
+```
+
+## JSON
+```go
+package main
+import (
+    "encoding/json"
+    "fmt"
+    "os"
+    "reflect"
+)
+type Response1 struct {
+    Page   int
+    Fruits []string
+}
+type Response2 struct {
+    Page   int      `json:"page"`
+    Fruits []string `json:"fruits"`
+}
+
+func main() {
+    //encoding basic data types to JSON strings。
+    /**
+    :!go run a.go
+    []uint8
+    [116 114 117 101]
+
+    []uint8
+    1
+
+    []uint8
+    3.12
+    [51 46 49 50]
+
+    []uint8
+    "hello"
+    [34 104 101 108 108 111 34]
+    */
+    bolB, _ := json.Marshal(true)
+    fmt.Println(reflect.TypeOf(bolB))
+    fmt.Println(bolB)
+
+    intB, _ := json.Marshal(1)
+    fmt.Println(reflect.TypeOf(intB))
+    fmt.Println(string(intB))
+
+    fltB, _ := json.Marshal(3.12)
+    fmt.Println(reflect.TypeOf(fltB))
+    fmt.Println(string(fltB))
+    fmt.Println(fltB)
+
+    strB, _ := json.Marshal("hello")
+    fmt.Println(reflect.TypeOf(strB))
+    fmt.Println(string(strB))
+    fmt.Println(strB)
+    
+    //encoding slices and maps to JSON arrays and objects.
+    /** slice
+    []uint8
+    ["apple","orange"]
+    [91 34 97 112 112 108 101 34 44 34 111 114 97 110 103 101 34 93] 
+    */  
+    slcD := []string{"apple", "orange"}
+    slcB, _ := json.Marshal(slcD)
+    fmt.Println(reflect.TypeOf(slcB))
+    fmt.Println(string(slcB))
+    fmt.Println(slcB)
+    /** map 
+    []uint8
+    {"apple":5,"orange":6}
+    [123 34 97 112 112 108 101 34 58 53 44 34 111 114 97 110 103 101 34 58 54 125]
+    */  
+    mapD := map[string]int{"apple": 5, "orange": 6}
+    mapB, _ := json.Marshal(mapD)
+    fmt.Println(reflect.TypeOf(mapB))
+    fmt.Println(string(mapB))
+    fmt.Println(mapB)
+
+    //encoding automatically your custom data types.
+    //{"Page":1,"Fruits":["apple","orange"]}
+    res1D := &Response1{
+        Page:   1,  
+        Fruits: []string{"apple", "orange"},
+    }   
+    res1B, _ := json.Marshal(res1D)
+    fmt.Println(string(res1B))
+    //use tags on struct field declarations to customize the encoded JSON key names.
+    //{"page":1,"fruits":["apple","orange"]}     [add tags to keys]
+    res2D := &Response2{
+        Page:   1,  
+        Fruits: []string{"apple", "orange"},
+    }   
+    res2B, _ := json.Marshal(res2D)
+    fmt.Println(string(res2B))
+
+    fmt.Println("DECODING JSON")
+    /***************************DECODING JSON**************************/
+    /** 
+    1. provide a variable where the JSON package can put the decoded data.
+    2. map[string]interface()/ will hold/ a map of/ strings to arbitray data types.
+    */  
+    var dat map[string]interface{}
+    fmt.Println(reflect.TypeOf(dat)) //map[string]interface {}
+
+    byt := []byte(`{"num":6.13,"strs":["apple","orange"]}`)
+    //check for associated errors
+    /** 
+    map[num:6.13 strs:[a b]] 
+    map[string]interface {}
+    
+    */  
+    if err := json.Unmarshal(byt, &dat); err != nil {
+        panic(err)
+    }   
+    fmt.Println(dat)                 //map[num:6.13 strs:[a b]] 
+    fmt.Println(reflect.TypeOf(dat)) //map[string]interface {}
+
+    // situation1: none-nested.  get value to get directly.
+    num := dat["num"].(float64)
+    fmt.Println(num)                 //6.13
+    fmt.Println(reflect.TypeOf(num)) //float64
+    // situation2: nested.  requires a series of casts.
+    strs := dat["strs"].([]interface{})
+    str1 := strs[0].(string)
+    fmt.Println(reflect.TypeOf(dat["strs"])) //[]interface {}
+    fmt.Println(reflect.TypeOf(strs))        //[]interface {}
+    fmt.Println(reflect.TypeOf(str1))        //string
+    fmt.Println(str1)
+
+    // decode JSON into custom data types.
+    str := `{"page": 1, "fruits": ["apple", "peach"]}`
+    res := Response2{}
+    json.Unmarshal([]byte(str), &res)
+    fmt.Println(res)           //{1 [apple peach]}
+    fmt.Println(res.Page)      //1 
+    fmt.Println(res.Fruits[0]) //apple
+
+    /** 
+    Except used bytes and strings as imtermediates between the data and JSON represation on standard out above.
+    We can also stream JSON encoding to os.Writer like os.Stdout or HTTP response bodies.
+    */  
+    enc := json.NewEncoder(os.Stdout)
+    d := map[string]int{"apple": 5, "orange": 7}
+    enc.Encode(d) //{"apple":5,"orange":7}
+```
+
+## kafka
+```go
+package main
+import (
+	"fmt"
+	"os"
+	"time"
+	"github.com/Shopify/sarama"
+	"github.com/bsm/sarama-cluster" //support automatic consumer-group rebalancing and offset tracking
+	"github.com/sdbaiguanghe/glog"
+)
+
+var (
+	topics = "xxx-topic"
+)
+
+// consumer 消费者
+func consumer() {
+	//init consumer config, enable errors and notifications.
+	groupID := "group-1"
+	config := cluster.NewConfig()
+	config.Group.Return.Notifications = true
+	config.Consumer.Return.Errors = true
+	config.Consumer.Offsets.CommitInterval = 1 * time.Second
+	config.Consumer.Offsets.Initial = sarama.OffsetNewest //初始从最新的offset开始
+
+	// init consumer
+	brokers := []string{"10.10.101.100:10010"}
+	topics := []string{"xxx-topic"}
+	c, err := cluster.NewConsumer(brokers, groupID, topics, config)
+
+	if err != nil {
+		glog.Errorf("Failed open consumer: %v", err)
+		return
+		panic(err)
+	}
+	defer c.Close()
+
+	go func(c *cluster.Consumer) {
+		errors := c.Errors()
+		noti := c.Notifications()
+		for {
+			select {
+			case err := <-errors:
+				glog.Errorln(err)
+			case <-noti:
+			}
+		}
+	}(c)
+
+	fmt.Println("start consume...")
+	for msg := range c.Messages() {
+		fmt.Fprintf(os.Stdout, "%s/%d/%d\t%s\n", msg.Topic, msg.Partition, msg.Offset, msg.Value)
+		c.MarkOffset(msg, "") //MarkOffset 并不是实时写入kafka，有可能在程序crash时丢掉未提交的offset
+	}
+	fmt.Println("end consume")
+}
+
+func main() {
+	consumer()
+}
+```
+
+## log
+```go
+import (
+    "log"
+    "os"
+)
+
+func main() {
+    log.SetFlags(log.Ldate | log.Ltime | log.Llongfile)
+    log.SetPrefix("TASK\t")
+    logFile, _ := os.OpenFile("a.log", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0664)
+    log.SetOutput(logFile)
+    log.Println("hahahahah")
+    log.Println(log.Prefix())                                                                                                                                                                                    
+}
 ```
