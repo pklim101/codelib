@@ -1,0 +1,1 @@
+curl -w "@curl-format.txt" -o /dev/null -s -L -H "Content-Type: application/x-protobuf" -d " " "https://www.test.com/rta/"

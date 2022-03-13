@@ -1,0 +1,534 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCEPT_TIMEOUT	os_win32.c	39;"	d	file:
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AIO_RD_IX	os_unix.c	82;"	d	file:
+AIO_WR_IX	os_unix.c	83;"	d	file:
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/missing --run tar$/;"	m
+AM_CPPFLAGS	Makefile	/^AM_CPPFLAGS = -I$(top_srcdir)\/include -W -Wall -pedantic -Wno-unused-parameter$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+AS	Makefile	/^AS = as$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+AcquireLock	os_unix.c	/^static int AcquireLock(int sock, int fail_on_intr)$/;"	f	file:
+AioInfo	os_unix.c	/^} AioInfo;$/;"	t	typeref:struct:__anon1	file:
+AlignInt8	fcgiapp.c	/^static int AlignInt8(unsigned n) {$/;"	f	file:
+AlignPtr8	fcgiapp.c	/^static unsigned char *AlignPtr8(unsigned char *p) {$/;"	f	file:
+BEGIN_RECORD	fcgiapp.c	1457;"	d	file:
+BSC32	libfcgi.mak	/^BSC32=bscmake.exe$/;"	m
+BSC32_FLAGS	libfcgi.mak	/^BSC32_FLAGS=\/nologo \/o"$(OUTDIR)\\libfcgi.bsc" $/;"	m
+BSC32_SBRS	libfcgi.mak	/^BSC32_SBRS= \\$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFG	libfcgi.mak	/^CFG=release$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2 -Wall$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/fcgi_config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPP	libfcgi.mak	/^CPP=cl.exe$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CPP_PROJ	libfcgi.mak	/^CPP_PROJ=\/nologo \/MD \/W3 \/O2 \/Ob2 \/I "..\\include" \/D "WIN32" \/D "NDEBUG" \/D "_CONSOLE" \/D "_MBCS" \/D "DLLAPI=__declspec(dllexport)" \/Fp"$(INTDIR)\\libfcgi.pch" \/nologo \/Fo"$(INTDIR)\\\\" \/Fd"$(INTDIR)\\\\" \/FD \/c $/;"	m
+CPP_PROJ	libfcgi.mak	/^CPP_PROJ=\/nologo \/MDd \/W4 \/Gm- \/Gi \/ZI \/Od \/I "..\\include" \/D "WIN32" \/D "_DEBUG" \/D "_CONSOLE" \/D "_MBCS" \/D "DLLAPI=__declspec(dllexport)" \/FR"$(INTDIR)\\\\" \/Fp"$(INTDIR)\\libfcgi.pch" \/nologo \/Fo"$(INTDIR)\\\\" \/Fd"$(INTDIR)\\libfcgi.pdb" \/FD \/GZ \/c $/;"	m
+CPP_SWITCHES	libfcgi.mak	/^CPP_SWITCHES=\/nologo \/MD \/W3 \/EHsc \/O2 \/Ob2 \/I "..\\include" \/D "WIN32" \/D "NDEBUG" \/D "_CONSOLE" \/D "_MBCS" \/D "DLLAPI=__declspec(dllexport)" \/Fp"$(INTDIR)\\libfcgi.pch" \/nologo \/Fo"$(INTDIR)\\\\" \/Fd"$(INTDIR)\\\\" \/FD \/c $/;"	m
+CPP_SWITCHES	libfcgi.mak	/^CPP_SWITCHES=\/nologo \/MDd \/W3 \/Gm- \/Gi \/EHsc \/ZI \/Od \/I "..\\include" \/D "WIN32" \/D "_DEBUG" \/D "_CONSOLE" \/D "_MBCS" \/D "DLLAPI=__declspec(dllexport)" \/FR"$(INTDIR)\\\\" \/Fp"$(INTDIR)\\libfcgi.pch" \/nologo \/Fo"$(INTDIR)\\\\" \/Fd"$(INTDIR)\\\\" \/FD \/GZ \/c $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXCOMPILE	Makefile	/^CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \\$/;"	m
+CXXCPP	Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXLD	Makefile	/^CXXLD = $(CXX)$/;"	m
+CXXLINK	Makefile	/^CXXLINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+ClientAddrOK	os_unix.c	/^static int ClientAddrOK(struct sockaddr_in *saPtr, const char *clientList)$/;"	f	file:
+CopyAndAdvance	fcgiapp.c	/^static void CopyAndAdvance(char **destPtr, char **srcPtr, int n)$/;"	f	file:
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DESCRIPTOR	os_win32.c	/^} DESCRIPTOR;$/;"	t	typeref:union:__anon3	file:
+DISTCLEANFILES	Makefile	/^DISTCLEANFILES = Makefile.in $/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libfcgi___la_SOURCES) $(libfcgi_la_SOURCES)$/;"	m
+DLLTOOL	Makefile	/^DLLTOOL = dlltool$/;"	m
+DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_CPP	Makefile	/^ECHO_CPP = echo-cpp$/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXTRA_LIBS	Makefile	/^EXTRA_LIBS = $/;"	m
+EXTRA_LTLIBRARIES	Makefile	/^EXTRA_LTLIBRARIES = libfcgi++.la$/;"	m
+EmptyBuffProc	fcgiapp.c	/^static void EmptyBuffProc(struct FCGX_Stream *stream, int doClose)$/;"	f	file:
+Errno	os_win32.c	/^    DWORD Errno;$/;"	m	struct:FD_TABLE	file:
+FCGI_Accept	fcgi_stdio.c	/^int FCGI_Accept(void)$/;"	f
+FCGI_Finish	fcgi_stdio.c	/^void FCGI_Finish(void)$/;"	f
+FCGI_OpenFromFILE	fcgi_stdio.c	/^static FCGI_FILE *FCGI_OpenFromFILE(FILE *stream)$/;"	f	file:
+FCGI_SetExitStatus	fcgi_stdio.c	/^void FCGI_SetExitStatus(int status)$/;"	f
+FCGI_StartFilterData	fcgi_stdio.c	/^int FCGI_StartFilterData(void)$/;"	f
+FCGI_clearerr	fcgi_stdio.c	/^void FCGI_clearerr(FCGI_FILE *fp)$/;"	f
+FCGI_fclose	fcgi_stdio.c	/^int FCGI_fclose(FCGI_FILE *fp)$/;"	f
+FCGI_fdopen	fcgi_stdio.c	/^FCGI_FILE *FCGI_fdopen(int fd, const char *mode)$/;"	f
+FCGI_feof	fcgi_stdio.c	/^int FCGI_feof(FCGI_FILE *fp)$/;"	f
+FCGI_ferror	fcgi_stdio.c	/^int FCGI_ferror(FCGI_FILE *fp)$/;"	f
+FCGI_fflush	fcgi_stdio.c	/^int FCGI_fflush(FCGI_FILE *fp)$/;"	f
+FCGI_fgetc	fcgi_stdio.c	/^int FCGI_fgetc(FCGI_FILE *fp)$/;"	f
+FCGI_fgetpos	fcgi_stdio.c	/^int FCGI_fgetpos(FCGI_FILE *fp, fpos_t *pos)$/;"	f
+FCGI_fgets	fcgi_stdio.c	/^char *FCGI_fgets(char *str, int size, FCGI_FILE *fp)$/;"	f
+FCGI_fileno	fcgi_stdio.c	/^int FCGI_fileno(FCGI_FILE *fp)$/;"	f
+FCGI_fopen	fcgi_stdio.c	/^FCGI_FILE *FCGI_fopen(const char *path, const char *mode)$/;"	f
+FCGI_fprintf	fcgi_stdio.c	/^int FCGI_fprintf(FCGI_FILE *fp, const char *format, ...)$/;"	f
+FCGI_fputc	fcgi_stdio.c	/^int FCGI_fputc(int c, FCGI_FILE *fp)$/;"	f
+FCGI_fputs	fcgi_stdio.c	/^int FCGI_fputs(const char *str, FCGI_FILE *fp)$/;"	f
+FCGI_fread	fcgi_stdio.c	/^size_t FCGI_fread(void *ptr, size_t size, size_t nmemb, FCGI_FILE *fp)$/;"	f
+FCGI_freopen	fcgi_stdio.c	/^FCGI_FILE *FCGI_freopen(const char *path, const char *mode,$/;"	f
+FCGI_fseek	fcgi_stdio.c	/^int FCGI_fseek(FCGI_FILE *fp, long offset, int whence)$/;"	f
+FCGI_fsetpos	fcgi_stdio.c	/^int FCGI_fsetpos(FCGI_FILE *fp, const fpos_t *pos)$/;"	f
+FCGI_ftell	fcgi_stdio.c	/^int FCGI_ftell(FCGI_FILE *fp)$/;"	f
+FCGI_fwrite	fcgi_stdio.c	/^size_t FCGI_fwrite(void *ptr, size_t size, size_t nmemb, FCGI_FILE *fp)$/;"	f
+FCGI_getchar	fcgi_stdio.c	/^int FCGI_getchar(void)$/;"	f
+FCGI_gets	fcgi_stdio.c	/^char *FCGI_gets(char *str)$/;"	f
+FCGI_pclose	fcgi_stdio.c	/^int FCGI_pclose(FCGI_FILE *fp)$/;"	f
+FCGI_perror	fcgi_stdio.c	/^void FCGI_perror(const char *str)$/;"	f
+FCGI_popen	fcgi_stdio.c	/^FCGI_FILE *FCGI_popen(const char *cmd, const char *type)$/;"	f
+FCGI_printf	fcgi_stdio.c	/^int FCGI_printf(const char *format, ...)$/;"	f
+FCGI_putchar	fcgi_stdio.c	/^int FCGI_putchar(int c)$/;"	f
+FCGI_puts	fcgi_stdio.c	/^int FCGI_puts(const char *str)$/;"	f
+FCGI_rewind	fcgi_stdio.c	/^void FCGI_rewind(FCGI_FILE *fp)$/;"	f
+FCGI_setbuf	fcgi_stdio.c	/^void FCGI_setbuf(FCGI_FILE *fp, char *buf)$/;"	f
+FCGI_setvbuf	fcgi_stdio.c	/^int FCGI_setvbuf(FCGI_FILE *fp, char *buf, int bufmode, size_t size)$/;"	f
+FCGI_tmpfile	fcgi_stdio.c	/^FCGI_FILE *FCGI_tmpfile(void)$/;"	f
+FCGI_ungetc	fcgi_stdio.c	/^int FCGI_ungetc(int c, FCGI_FILE *fp)$/;"	f
+FCGI_vfprintf	fcgi_stdio.c	/^int FCGI_vfprintf(FCGI_FILE *fp, const char *format, va_list ap)$/;"	f
+FCGI_vprintf	fcgi_stdio.c	/^int FCGI_vprintf(const char *format, va_list ap)$/;"	f
+FCGX_Accept	fcgiapp.c	/^int FCGX_Accept($/;"	f
+FCGX_Accept_r	fcgiapp.c	/^int FCGX_Accept_r(FCGX_Request *reqDataPtr)$/;"	f
+FCGX_Attach	fcgiapp.c	/^FCGX_Attach(FCGX_Request * r)$/;"	f
+FCGX_ClearError	fcgiapp.c	/^void FCGX_ClearError(FCGX_Stream *stream) {$/;"	f
+FCGX_CreateWriter	fcgiapp.c	/^FCGX_Stream *FCGX_CreateWriter($/;"	f
+FCGX_Detach	fcgiapp.c	/^FCGX_Detach(FCGX_Request * r)$/;"	f
+FCGX_FClose	fcgiapp.c	/^int FCGX_FClose(FCGX_Stream *stream)$/;"	f
+FCGX_FFlush	fcgiapp.c	/^int FCGX_FFlush(FCGX_Stream *stream)$/;"	f
+FCGX_FPrintF	fcgiapp.c	/^int FCGX_FPrintF(FCGX_Stream *stream, const char *format, ...)$/;"	f
+FCGX_Finish	fcgiapp.c	/^void FCGX_Finish(void)$/;"	f
+FCGX_Finish_r	fcgiapp.c	/^void FCGX_Finish_r(FCGX_Request *reqDataPtr)$/;"	f
+FCGX_Free	fcgiapp.c	/^void FCGX_Free(FCGX_Request * request, int close)$/;"	f
+FCGX_FreeStream	fcgiapp.c	/^void FCGX_FreeStream(FCGX_Stream **streamPtr)$/;"	f
+FCGX_GetChar	fcgiapp.c	/^int FCGX_GetChar(FCGX_Stream *stream)$/;"	f
+FCGX_GetError	fcgiapp.c	/^int FCGX_GetError(FCGX_Stream *stream) {$/;"	f
+FCGX_GetLine	fcgiapp.c	/^char *FCGX_GetLine(char *str, int n, FCGX_Stream *stream)$/;"	f
+FCGX_GetParam	fcgiapp.c	/^char *FCGX_GetParam(const char *name, FCGX_ParamArray envp)$/;"	f
+FCGX_GetStr	fcgiapp.c	/^int FCGX_GetStr(char *str, int n, FCGX_Stream *stream)$/;"	f
+FCGX_HasSeenEOF	fcgiapp.c	/^int FCGX_HasSeenEOF(FCGX_Stream *stream) {$/;"	f
+FCGX_Init	fcgiapp.c	/^int FCGX_Init(void)$/;"	f
+FCGX_InitRequest	fcgiapp.c	/^int FCGX_InitRequest(FCGX_Request *request, int sock, int flags)$/;"	f
+FCGX_IsCGI	fcgiapp.c	/^int FCGX_IsCGI(void)$/;"	f
+FCGX_OpenSocket	fcgiapp.c	/^int FCGX_OpenSocket(const char *path, int backlog)$/;"	f
+FCGX_PutChar	fcgiapp.c	/^int FCGX_PutChar(int c, FCGX_Stream *stream)$/;"	f
+FCGX_PutS	fcgiapp.c	/^int FCGX_PutS(const char *str, FCGX_Stream *stream)$/;"	f
+FCGX_PutStr	fcgiapp.c	/^int FCGX_PutStr(const char *str, int n, FCGX_Stream *stream)$/;"	f
+FCGX_SetExitStatus	fcgiapp.c	/^void FCGX_SetExitStatus(int status, FCGX_Stream *stream)$/;"	f
+FCGX_ShutdownPending	fcgiapp.c	/^void FCGX_ShutdownPending(void)$/;"	f
+FCGX_StartFilterData	fcgiapp.c	/^int FCGX_StartFilterData(FCGX_Stream *stream)$/;"	f
+FCGX_Stream_Data	fcgiapp.c	/^typedef struct FCGX_Stream_Data {$/;"	s	file:
+FCGX_Stream_Data	fcgiapp.c	/^} FCGX_Stream_Data;$/;"	t	typeref:struct:FCGX_Stream_Data	file:
+FCGX_UnGetChar	fcgiapp.c	/^int FCGX_UnGetChar(int c, FCGX_Stream *stream) {$/;"	f
+FCGX_VFPrintF	fcgiapp.c	/^int FCGX_VFPrintF(FCGX_Stream *stream, const char *format, va_list arg)$/;"	f
+FD_FILE_ASYNC	os_win32.c	/^    FD_FILE_ASYNC,$/;"	e	enum:__anon2	file:
+FD_FILE_SYNC	os_win32.c	/^    FD_FILE_SYNC,$/;"	e	enum:__anon2	file:
+FD_PIPE_ASYNC	os_win32.c	/^    FD_PIPE_ASYNC$/;"	e	enum:__anon2	file:
+FD_PIPE_SYNC	os_win32.c	/^    FD_PIPE_SYNC,$/;"	e	enum:__anon2	file:
+FD_SOCKET_ASYNC	os_win32.c	/^    FD_SOCKET_ASYNC,$/;"	e	enum:__anon2	file:
+FD_SOCKET_SYNC	os_win32.c	/^    FD_SOCKET_SYNC,$/;"	e	enum:__anon2	file:
+FD_TABLE	os_win32.c	/^struct FD_TABLE {$/;"	s	file:
+FD_UNUSED	os_win32.c	/^    FD_UNUSED,$/;"	e	enum:__anon2	file:
+FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FILE_TYPE	os_win32.c	/^} FILE_TYPE;$/;"	t	typeref:enum:__anon2	file:
+FMT_BUFFLEN	fcgiapp.c	398;"	d	file:
+FillBuffProc	fcgiapp.c	/^static void FillBuffProc(FCGX_Stream *stream)$/;"	f	file:
+FreeParams	fcgiapp.c	/^static void FreeParams(ParamsPtr *paramsPtrPtr)$/;"	f	file:
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GrowAsyncTable	os_unix.c	/^static void GrowAsyncTable(void)$/;"	f	file:
+INADDR_NONE	os_unix.c	60;"	d	file:
+INCLUDEDIR	Makefile	/^INCLUDEDIR = ..\/include$/;"	m
+INCLUDE_FILES	Makefile	/^INCLUDE_FILES = $(INCLUDEDIR)\/fastcgi.h     \\$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INTDIR	libfcgi.mak	/^INTDIR=.\\..\\libfcgi\\Debug$/;"	m
+INTDIR	libfcgi.mak	/^INTDIR=.\\..\\libfcgi\\Release$/;"	m
+LD	Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBFCGIXX	Makefile	/^LIBFCGIXX = libfcgi++.la$/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lnsl $/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LINK	Makefile	/^LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LINK32	libfcgi.mak	/^LINK32=link.exe$/;"	m
+LINK32_FLAGS	libfcgi.mak	/^LINK32_FLAGS=Ws2_32.lib Kernel32.lib Windowsapp.lib \/APPCONTAINER \/nologo \/dll \/pdb:none  \/out:"$(OUTDIR)\\libfcgi.dll" \/implib:"$(OUTDIR)\\libfcgi.lib" $/;"	m
+LINK32_FLAGS	libfcgi.mak	/^LINK32_FLAGS=Ws2_32.lib Kernel32.lib Windowsapp.lib \/APPCONTAINER \/nologo \/dll \/profile \/map:"$(INTDIR)\\libfcgi.map" \/debug  \/out:"$(OUTDIR)\\libfcgi.dll" \/implib:"$(OUTDIR)\\libfcgi.lib" $/;"	m
+LINK32_OBJS	libfcgi.mak	/^LINK32_OBJS= \\$/;"	m
+LIPO	Makefile	/^LIPO = $/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LOCALHOST	os_win32.c	43;"	d	file:
+LONG_DOUBLE	fcgiapp.c	54;"	d	file:
+LONG_DOUBLE	fcgiapp.c	56;"	d	file:
+LTCOMPILE	Makefile	/^LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTCXXCOMPILE	Makefile	/^LTCXXCOMPILE = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/missing --run makeinfo$/;"	m
+MGMT_RECORD	fcgiapp.c	1458;"	d	file:
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MTL	libfcgi.mak	/^MTL=midl.exe$/;"	m
+MTL_PROJ	libfcgi.mak	/^MTL_PROJ=\/nologo \/D "NDEBUG" \/mktyplib203 \/win32 $/;"	m
+MTL_PROJ	libfcgi.mak	/^MTL_PROJ=\/nologo \/D "_DEBUG" \/mktyplib203 \/win32 $/;"	m
+MUTEX_VARNAME	os_win32.c	41;"	d	file:
+MakeEndRequestBody	fcgiapp.c	/^static FCGI_EndRequestBody MakeEndRequestBody($/;"	f	file:
+MakeHeader	fcgiapp.c	/^static FCGI_Header MakeHeader($/;"	f	file:
+MakeUnknownTypeBody	fcgiapp.c	/^static FCGI_UnknownTypeBody MakeUnknownTypeBody($/;"	f	file:
+Malloc	fcgiapp.c	/^static void *Malloc(size_t size)$/;"	f	file:
+NM	Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NO_FCGI_DEFINES	fcgi_stdio.c	29;"	d	file:
+NO_FCGI_DEFINES	fcgi_stdio.c	31;"	d	file:
+NULL	libfcgi.mak	/^NULL=$/;"	m
+NULL	libfcgi.mak	/^NULL=nul$/;"	m
+NewParams	fcgiapp.c	/^static ParamsPtr NewParams(int length)$/;"	f	file:
+NewReader	fcgiapp.c	/^static FCGX_Stream *NewReader(FCGX_Request *reqDataPtr, int bufflen, int streamType)$/;"	f	file:
+NewStream	fcgiapp.c	/^static FCGX_Stream *NewStream($/;"	f	file:
+NewWriter	fcgiapp.c	/^static FCGX_Stream *NewWriter(FCGX_Request *reqDataPtr, int bufflen, int streamType)$/;"	f	file:
+OBJDUMP	Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OS_Accept	os_unix.c	/^int OS_Accept(int listen_sock, int fail_on_intr, const char *webServerAddrs)$/;"	f
+OS_Accept	os_win32.c	/^int OS_Accept(int listen_sock, int fail_on_intr, const char *webServerAddrs)$/;"	f
+OS_AsyncRead	os_unix.c	/^int OS_AsyncRead(int fd, int offset, void *buf, int len,$/;"	f
+OS_AsyncRead	os_win32.c	/^int OS_AsyncRead(int fd, int offset, void *buf, int len,$/;"	f
+OS_AsyncReadStdin	os_unix.c	/^int OS_AsyncReadStdin(void *buf, int len, OS_AsyncProc procPtr,$/;"	f
+OS_AsyncReadStdin	os_win32.c	/^int OS_AsyncReadStdin(void *buf, int len, OS_AsyncProc procPtr,$/;"	f
+OS_AsyncWrite	os_unix.c	/^int OS_AsyncWrite(int fd, int offset, void *buf, int len,$/;"	f
+OS_AsyncWrite	os_win32.c	/^int OS_AsyncWrite(int fd, int offset, void *buf, int len,$/;"	f
+OS_BuildSockAddrUn	os_unix.c	/^static int OS_BuildSockAddrUn(const char *bindPath,$/;"	f	file:
+OS_Close	os_unix.c	/^int OS_Close(int fd, int shutdown_ok)$/;"	f
+OS_Close	os_win32.c	/^int OS_Close(int fd, int shutdown_ok)$/;"	f
+OS_CloseRead	os_unix.c	/^int OS_CloseRead(int fd)$/;"	f
+OS_CloseRead	os_win32.c	/^int OS_CloseRead(int fd)$/;"	f
+OS_CreateLocalIpcFd	os_unix.c	/^int OS_CreateLocalIpcFd(const char *bindPath, int backlog)$/;"	f
+OS_CreateLocalIpcFd	os_win32.c	/^int OS_CreateLocalIpcFd(const char *bindPath, int backlog)$/;"	f
+OS_DoIo	os_unix.c	/^int OS_DoIo(struct timeval *tmo)$/;"	f
+OS_DoIo	os_win32.c	/^int OS_DoIo(struct timeval *tmo)$/;"	f
+OS_FcgiConnect	os_unix.c	/^int OS_FcgiConnect(char *bindPath)$/;"	f
+OS_FcgiConnect	os_win32.c	/^int OS_FcgiConnect(char *bindPath)$/;"	f
+OS_InstallSignalHandlers	os_unix.c	/^static void OS_InstallSignalHandlers(int force)$/;"	f	file:
+OS_IpcClose	os_unix.c	/^int OS_IpcClose(int ipcFd, int shutdown)$/;"	f
+OS_IpcClose	os_win32.c	/^int OS_IpcClose(int ipcFd, int shutdown)$/;"	f
+OS_IsFcgi	os_unix.c	/^int OS_IsFcgi(int sock)$/;"	f
+OS_IsFcgi	os_win32.c	/^int OS_IsFcgi(int sock)$/;"	f
+OS_LibInit	os_unix.c	/^int OS_LibInit(int stdioFds[3])$/;"	f
+OS_LibInit	os_win32.c	/^int OS_LibInit(int stdioFds[3])$/;"	f
+OS_LibShutdown	os_unix.c	/^void OS_LibShutdown()$/;"	f
+OS_LibShutdown	os_win32.c	/^void OS_LibShutdown()$/;"	f
+OS_Read	os_unix.c	/^int OS_Read(int fd, char * buf, size_t len)$/;"	f
+OS_Read	os_win32.c	/^int OS_Read(int fd, char * buf, size_t len)$/;"	f
+OS_SetFlags	os_unix.c	/^void OS_SetFlags(int fd, int flags)$/;"	f
+OS_SetFlags	os_win32.c	/^void OS_SetFlags(int fd, int flags)$/;"	f
+OS_ShutdownPending	os_unix.c	/^void OS_ShutdownPending()$/;"	f
+OS_ShutdownPending	os_win32.c	/^void OS_ShutdownPending(void)$/;"	f
+OS_SigpipeHandler	os_unix.c	/^static void OS_SigpipeHandler(int signo)$/;"	f	file:
+OS_Sigusr1Handler	os_unix.c	/^static void OS_Sigusr1Handler(int signo)$/;"	f	file:
+OS_SpawnChild	os_unix.c	/^int OS_SpawnChild(char *appPath, int listenFd)$/;"	f
+OS_SpawnChild	os_win32.c	/^int OS_SpawnChild(char *execPath, int listenFd)$/;"	f
+OS_Write	os_unix.c	/^int OS_Write(int fd, char * buf, size_t len)$/;"	f
+OS_Write	os_win32.c	/^int OS_Write(int fd, char * buf, size_t len)$/;"	f
+OTOOL	Makefile	/^OTOOL = $/;"	m
+OTOOL64	Makefile	/^OTOOL64 = $/;"	m
+OUTDIR	libfcgi.mak	/^OUTDIR=.\\..\\libfcgi\\Debug$/;"	m
+OUTDIR	libfcgi.mak	/^OUTDIR=.\\..\\libfcgi\\Release$/;"	m
+OVERLAPPED_REQUEST	os_win32.c	/^struct OVERLAPPED_REQUEST {$/;"	s	file:
+OutDir	libfcgi.mak	/^OutDir=.\\..\\libfcgi\\Debug$/;"	m
+OutDir	libfcgi.mak	/^OutDir=.\\..\\libfcgi\\Release$/;"	m
+PACKAGE	Makefile	/^PACKAGE = fcgi$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = $/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = fcgi$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = fcgi 2.4.2$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = fcgi$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 2.4.2$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+POVERLAPPED_REQUEST	os_win32.c	/^typedef struct OVERLAPPED_REQUEST *POVERLAPPED_REQUEST;$/;"	t	typeref:struct:OVERLAPPED_REQUEST	file:
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRINTF_BUFFLEN	fcgiapp.c	393;"	d	file:
+PTHREAD_CC	Makefile	/^PTHREAD_CC = gcc$/;"	m
+PTHREAD_CFLAGS	Makefile	/^PTHREAD_CFLAGS = -pthread$/;"	m
+PTHREAD_LIBS	Makefile	/^PTHREAD_LIBS = $/;"	m
+Params	fcgiapp.c	/^typedef struct Params {$/;"	s	file:
+Params	fcgiapp.c	/^} Params;$/;"	t	typeref:struct:Params	file:
+ParamsPtr	fcgiapp.c	/^typedef Params *ParamsPtr;$/;"	t	file:
+ProcessBeginRecord	fcgiapp.c	/^static int ProcessBeginRecord(int requestId, FCGX_Stream *stream)$/;"	f	file:
+ProcessHeader	fcgiapp.c	/^static int ProcessHeader(FCGI_Header header, FCGX_Stream *stream)$/;"	f	file:
+ProcessManagementRecord	fcgiapp.c	/^static int ProcessManagementRecord(int type, FCGX_Stream *stream)$/;"	f	file:
+PutParam	fcgiapp.c	/^static void PutParam(ParamsPtr paramsPtr, char *nameValue)$/;"	f	file:
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+RSC	libfcgi.mak	/^RSC=rc.exe$/;"	m
+ReadParams	fcgiapp.c	/^static int ReadParams(Params *paramsPtr, FCGX_Stream *stream)$/;"	f	file:
+ReleaseLock	os_unix.c	/^static int ReleaseLock(int sock)$/;"	f	file:
+SED	Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHUTDOWN_EVENT_NAME	os_win32.c	42;"	d	file:
+SKIP	fcgiapp.c	1456;"	d	file:
+SOURCE	libfcgi.mak	/^SOURCE=..\\libfcgi\\fcgi_stdio.c$/;"	m
+SOURCE	libfcgi.mak	/^SOURCE=..\\libfcgi\\fcgiapp.c$/;"	m
+SOURCE	libfcgi.mak	/^SOURCE=..\\libfcgi\\fcgio.cpp$/;"	m
+SOURCE	libfcgi.mak	/^SOURCE=..\\libfcgi\\os_unix.c$/;"	m
+SOURCE	libfcgi.mak	/^SOURCE=..\\libfcgi\\os_win32.c$/;"	m
+SOURCE	libfcgi.mak	/^SOURCE=..\\libfcgi\\strerror.c$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libfcgi___la_SOURCES) $(libfcgi_la_SOURCES)$/;"	m
+STREAM_RECORD	fcgiapp.c	1455;"	d	file:
+STRIP	Makefile	/^STRIP = strip$/;"	m
+SYSTEM	Makefile	/^SYSTEM = unix$/;"	m
+SetError	fcgiapp.c	/^static void SetError(FCGX_Stream *stream, int FCGI_errno)$/;"	f	file:
+SetReaderType	fcgiapp.c	/^static FCGX_Stream *SetReaderType(FCGX_Stream *stream, int streamType)$/;"	f	file:
+ShutdownRequestThread	os_win32.c	/^static void ShutdownRequestThread(void * arg)$/;"	f	file:
+SockAddrUnion	os_unix.c	/^union SockAddrUnion {$/;"	u	file:
+StdinThread	os_win32.c	/^static void StdinThread(void * startup) $/;"	f	file:
+StringCopy	fcgiapp.c	/^static char *StringCopy(char *str)$/;"	f	file:
+THREADED	Makefile	/^THREADED = threaded$/;"	m
+UPREFIX	strerror.c	51;"	d	file:
+VERSION	Makefile	/^VERSION = 2.4.2$/;"	m
+WIN32_LEAN_AND_MEAN	os_win32.c	20;"	d	file:
+WIN32_OPEN_MAX	os_win32.c	33;"	d	file:
+Win32FreeDescriptor	os_win32.c	/^static void Win32FreeDescriptor(int fd)$/;"	f	file:
+Win32NewDescriptor	os_win32.c	/^static int Win32NewDescriptor(FILE_TYPE type, int fd, int desiredFd)$/;"	f	file:
+WriteCloseRecords	fcgiapp.c	/^static void WriteCloseRecords(struct FCGX_Stream *stream)$/;"	f	file:
+__strerror	strerror.c	/^__strerror(int num, char *buf)$/;"	f
+_fcgi_sF	fcgi_stdio.c	/^FCGI_FILE _fcgi_sF[3];$/;"	v
+abs_builddir	Makefile	/^abs_builddir = \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/libfcgi$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/libfcgi$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/libo-ps\/test\/practice\/project\/fcgi2-master$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/libo-ps\/test\/practice\/project\/fcgi2-master$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m
+acceptCalled	fcgi_stdio.c	/^static int acceptCalled = FALSE;$/;"	v	file:
+acceptMutex	os_win32.c	/^static HANDLE acceptMutex = INVALID_HANDLE_VALUE;$/;"	v	file:
+acceptNamedPipe	os_win32.c	/^static int acceptNamedPipe()$/;"	f	file:
+acceptSocket	os_win32.c	/^static int acceptSocket(const char *webServerAddrs)$/;"	f	file:
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m
+am__base_list	Makefile	/^am__base_list = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__install_max	Makefile	/^am__install_max = 40$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__nobase_list	Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_strip	Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip_setup	Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__objects_1	Makefile	/^am__objects_1 =$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__strip_dir	Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__vpath_adj	Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am_libfcgi___la_OBJECTS	Makefile	/^am_libfcgi___la_OBJECTS = $(am__objects_1) fcgio.lo$/;"	m
+am_libfcgi_la_OBJECTS	Makefile	/^am_libfcgi_la_OBJECTS = $(am__objects_1) libfcgi_la-fcgiapp.lo \\$/;"	m
+asyncIoInUse	os_unix.c	/^static int asyncIoInUse = FALSE;$/;"	v	file:
+asyncIoTable	os_unix.c	/^static AioInfo *asyncIoTable = NULL;$/;"	v	file:
+asyncIoTableSize	os_unix.c	/^static int asyncIoTableSize = 16;$/;"	v	file:
+attach	fcgio.cpp	/^int fcgi_streambuf::attach(FCGX_Stream * fs)$/;"	f	class:fcgi_streambuf
+attach	fcgio.cpp	/^void fcgi_istream::attach(FCGX_Stream * fs)$/;"	f	class:fcgi_istream
+attach	fcgio.cpp	/^void fcgi_ostream::attach(FCGX_Stream * fs)$/;"	f	class:fcgi_ostream
+bindPathPrefix	os_win32.c	/^static const char *bindPathPrefix = "\\\\\\\\.\\\\pipe\\\\FastCGI\\\\";$/;"	v	file:
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+buf	os_unix.c	/^    void *buf;$/;"	m	struct:__anon1	file:
+buff	fcgiapp.c	/^    unsigned char *buff;      \/* buffer after alignment *\/$/;"	m	struct:FCGX_Stream_Data	file:
+buffStop	fcgiapp.c	/^    unsigned char *buffStop;  \/* reader: last valid byte + 1 of entire buffer.$/;"	m	struct:FCGX_Stream_Data	file:
+bufflen	fcgiapp.c	/^    int bufflen;              \/* number of bytes buff can store *\/$/;"	m	struct:FCGX_Stream_Data	file:
+build	Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = unknown$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+clientData	os_unix.c	/^    ClientData clientData;	    \/* caller private data *\/$/;"	m	struct:__anon1	file:
+clientData	os_win32.c	/^    ClientData clientData;	\/* callback argument *\/$/;"	m	struct:OVERLAPPED_REQUEST	file:
+clientData1	os_win32.c	/^    ClientData clientData1;	\/* additional clientData *\/$/;"	m	struct:OVERLAPPED_REQUEST	file:
+contentLen	fcgiapp.c	/^    int contentLen;           \/* reader: bytes of unread content *\/$/;"	m	struct:FCGX_Stream_Data	file:
+cur	fcgiapp.c	/^    char **cur;		    \/* current item in vec; *cur == NULL *\/$/;"	m	struct:Params	file:
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+environ	fcgi_stdio.c	37;"	d	file:
+eorStop	fcgiapp.c	/^    int eorStop;              \/* reader: stop stream at end-of-record *\/$/;"	m	struct:FCGX_Stream_Data	file:
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+fcgi_istream	fcgio.cpp	/^fcgi_istream::fcgi_istream(FCGX_Stream * fs) :$/;"	f	class:fcgi_istream
+fcgi_ostream	fcgio.cpp	/^fcgi_ostream::fcgi_ostream(FCGX_Stream * fs) :$/;"	f	class:fcgi_ostream
+fcgi_streambuf	fcgio.cpp	/^fcgi_streambuf::fcgi_streambuf(FCGX_Stream * fs) $/;"	f	class:fcgi_streambuf
+fcgi_streambuf	fcgio.cpp	/^fcgi_streambuf::fcgi_streambuf(FCGX_Stream * fs, char * b, int bs)$/;"	f	class:fcgi_streambuf
+fcgi_streambuf	fcgio.cpp	/^fcgi_streambuf::fcgi_streambuf(char_type * b, streamsize bs)$/;"	f	class:fcgi_streambuf
+fd	os_unix.c	/^    int fd;$/;"	m	struct:__anon1	file:
+fdTable	os_win32.c	/^static struct FD_TABLE fdTable[WIN32_OPEN_MAX];$/;"	v	typeref:struct:FD_TABLE	file:
+fdTableCritical	os_win32.c	/^static CRITICAL_SECTION  fdTableCritical;$/;"	v	file:
+fid	os_win32.c	/^    DESCRIPTOR fid;$/;"	m	struct:FD_TABLE	file:
+fileHandle	os_win32.c	/^    HANDLE fileHandle;$/;"	m	union:__anon3	file:
+getPort	os_win32.c	/^static short getPort(const char * bindPath)$/;"	f	file:
+hIoCompPort	os_win32.c	/^static HANDLE hIoCompPort = INVALID_HANDLE_VALUE;$/;"	v	file:
+hListen	os_win32.c	/^static HANDLE hListen = INVALID_HANDLE_VALUE;$/;"	v	file:
+hMapMutex	os_win32.c	/^    HANDLE  hMapMutex;		\/* mutex handle for multi-proc offset update *\/$/;"	m	struct:FD_TABLE	file:
+hStdinCompPort	os_win32.c	/^static HANDLE hStdinCompPort = INVALID_HANDLE_VALUE;$/;"	v	file:
+hStdinThread	os_win32.c	/^static HANDLE hStdinThread = INVALID_HANDLE_VALUE;$/;"	v	file:
+host	Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_cpu	Makefile	/^host_cpu = x86_64$/;"	m
+host_os	Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_vendor	Makefile	/^host_vendor = unknown$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+inUse	os_unix.c	/^    int inUse;$/;"	m	struct:__anon1	file:
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+inetVariant	os_unix.c	/^    struct  sockaddr_in	inetVariant;$/;"	m	union:SockAddrUnion	typeref:struct:SockAddrUnion::sockaddr_in	file:
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+init	fcgio.cpp	/^void fcgi_streambuf::init(FCGX_Stream * fs, char_type * b, streamsize bs)$/;"	f	class:fcgi_streambuf
+installSignalHandler	os_unix.c	/^static void installSignalHandler(int signo, const struct sigaction * act, int force)$/;"	f	file:
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+instance	os_win32.c	/^    unsigned long instance;	\/* file instance (won't match after a close) *\/$/;"	m	struct:OVERLAPPED_REQUEST	file:
+instance	os_win32.c	/^    unsigned long instance;$/;"	m	struct:FD_TABLE	file:
+isAddrOK	os_win32.c	/^static int isAddrOK(struct sockaddr_in * inet_sockaddr, const char * okAddrs)$/;"	f	file:
+isAddrOKCallback	os_win32.c	/^static int CALLBACK isAddrOKCallback(LPWSABUF  lpCallerId,$/;"	f	file:
+isAnythingWritten	fcgiapp.c	/^    int isAnythingWritten;    \/* writer: data has been written to ipcFd *\/$/;"	m	struct:FCGX_Stream_Data	file:
+isCGI	fcgi_stdio.c	/^static int isCGI = FALSE;$/;"	v	file:
+isFastCGI	fcgiapp.c	/^static int isFastCGI = -1;$/;"	v	file:
+is_af_unix_keeper	os_unix.c	/^static int is_af_unix_keeper(const int fd)$/;"	f	file:
+is_reasonable_accept_errno	os_unix.c	/^static int is_reasonable_accept_errno (const int error)$/;"	f	file:
+len	os_unix.c	/^    int len;$/;"	m	struct:__anon1	file:
+length	fcgiapp.c	/^    int length;		    \/* number of string vec can hold *\/$/;"	m	struct:Params	file:
+libInitialized	fcgiapp.c	/^static int libInitialized = 0;$/;"	v	file:
+libInitialized	os_unix.c	/^static int libInitialized = FALSE;$/;"	v	file:
+libInitialized	os_win32.c	/^static BOOLEAN libInitialized = FALSE;$/;"	v	file:
+lib_LTLIBRARIES	Makefile	/^lib_LTLIBRARIES = libfcgi.la libfcgi++.la$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libfcgiIsAfUnixKeeperPollTimeout	os_unix.c	/^static int libfcgiIsAfUnixKeeperPollTimeout = 2000;$/;"	v	file:
+libfcgiOsClosePollTimeout	os_unix.c	/^static int libfcgiOsClosePollTimeout = 2000;$/;"	v	file:
+libfcgi___la_CFLAGS	Makefile	/^libfcgi___la_CFLAGS = -pthread$/;"	m
+libfcgi___la_DEPENDENCIES	Makefile	/^libfcgi___la_DEPENDENCIES = libfcgi.la$/;"	m
+libfcgi___la_LDFLAGS	Makefile	/^libfcgi___la_LDFLAGS = -rpath ${exec_prefix}\/lib -no-undefined$/;"	m
+libfcgi___la_LIBADD	Makefile	/^libfcgi___la_LIBADD = libfcgi.la$/;"	m
+libfcgi___la_LINK	Makefile	/^libfcgi___la_LINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) \\$/;"	m
+libfcgi___la_OBJECTS	Makefile	/^libfcgi___la_OBJECTS = $(am_libfcgi___la_OBJECTS)$/;"	m
+libfcgi___la_SOURCES	Makefile	/^libfcgi___la_SOURCES = $(INCLUDE_FILES)       \\$/;"	m
+libfcgi_la_CC	Makefile	/^libfcgi_la_CC = gcc$/;"	m
+libfcgi_la_CFLAGS	Makefile	/^libfcgi_la_CFLAGS = -pthread$/;"	m
+libfcgi_la_DEPENDENCIES	Makefile	/^libfcgi_la_DEPENDENCIES =$/;"	m
+libfcgi_la_LDFLAGS	Makefile	/^libfcgi_la_LDFLAGS =  -no-undefined$/;"	m
+libfcgi_la_LIBADD	Makefile	/^libfcgi_la_LIBADD = -lm$/;"	m
+libfcgi_la_LINK	Makefile	/^libfcgi_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+libfcgi_la_OBJECTS	Makefile	/^libfcgi_la_OBJECTS = $(am_libfcgi_la_OBJECTS)$/;"	m
+libfcgi_la_SOURCES	Makefile	/^libfcgi_la_SOURCES = $(INCLUDE_FILES)  \\$/;"	m
+listenType	os_win32.c	/^static FILE_TYPE listenType = FD_UNUSED;$/;"	v	file:
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+lt_ECHO	Makefile	/^lt_ECHO = echo$/;"	m
+mBuff	fcgiapp.c	/^    unsigned char *mBuff;     \/* buffer as returned by Malloc *\/$/;"	m	struct:FCGX_Stream_Data	file:
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+maxFd	os_unix.c	/^static int volatile maxFd = -1;$/;"	v	file:
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+numRdPosted	os_unix.c	/^static int numRdPosted = 0;$/;"	v	file:
+numWrPosted	os_unix.c	/^static int numWrPosted = 0;$/;"	v	file:
+offset	os_unix.c	/^    int offset;$/;"	m	struct:__anon1	file:
+offset	os_win32.c	/^    int offset;			\/* only valid for async file writes *\/$/;"	m	struct:FD_TABLE	file:
+offsetHighPtr	os_win32.c	/^    LPDWORD offsetHighPtr;	\/* pointers to offset high and low words *\/$/;"	m	struct:FD_TABLE	file:
+offsetLowPtr	os_win32.c	/^    LPDWORD offsetLowPtr;	\/* only valid for async file writes (logs) *\/$/;"	m	struct:FD_TABLE	file:
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+ovList	os_win32.c	/^    LPVOID  ovList;		\/* List of associated OVERLAPPED_REQUESTs *\/$/;"	m	struct:FD_TABLE	file:
+overflow	fcgio.cpp	/^int fcgi_streambuf::overflow(int c)$/;"	f	class:fcgi_streambuf
+overlapped	os_win32.c	/^    OVERLAPPED overlapped;$/;"	m	struct:OVERLAPPED_REQUEST	file:
+paddingLen	fcgiapp.c	/^    int paddingLen;           \/* reader: bytes of unread padding *\/$/;"	m	struct:FCGX_Stream_Data	file:
+path	os_win32.c	/^    char *path;$/;"	m	struct:FD_TABLE	file:
+pclose	fcgi_stdio.c	55;"	d	file:
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgconfigdir	Makefile	/^pkgconfigdir = ${libdir}\/pkgconfig$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/fcgi$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/fcgi$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/fcgi$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/fcgi$/;"	m
+popen	fcgi_stdio.c	54;"	d	file:
+prefix	Makefile	/^prefix = \/home\/libo-ps\/test\/practice\/project\/fcgi2-master\/local$/;"	m
+printLastError	os_win32.c	/^static void printLastError(const char * text)$/;"	f	file:
+procPtr	os_unix.c	/^    OS_AsyncProc procPtr;	    \/* callout completion procedure *\/$/;"	m	struct:__anon1	file:
+procPtr	os_win32.c	/^    OS_AsyncProc procPtr;	\/* callback routine *\/$/;"	m	struct:OVERLAPPED_REQUEST	file:
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+rawWrite	fcgiapp.c	/^    int rawWrite;             \/* writer: write data without stream headers *\/$/;"	m	struct:FCGX_Stream_Data	file:
+readFdSet	os_unix.c	/^static fd_set readFdSet;$/;"	v	file:
+readFdSetPost	os_unix.c	/^static fd_set readFdSetPost;$/;"	v	file:
+reqDataPtr	fcgiapp.c	/^    FCGX_Request *reqDataPtr; \/* request data not specific to one stream *\/$/;"	m	struct:FCGX_Stream_Data	file:
+reset	fcgio.cpp	/^void fcgi_streambuf::reset(void)$/;"	f	class:fcgi_streambuf
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+setbuf	fcgio.cpp	/^std::streambuf * fcgi_streambuf::setbuf(char_type * b, streamsize bs)$/;"	f	class:fcgi_streambuf
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+shutdownNow	os_unix.c	/^static int shutdownNow = FALSE;$/;"	v	file:
+shutdownNow	os_win32.c	/^static BOOLEAN shutdownNow = FALSE;$/;"	v	file:
+shutdownPending	os_unix.c	/^static int shutdownPending = FALSE;$/;"	v	file:
+shutdownPending	os_win32.c	/^static BOOLEAN shutdownPending = FALSE;$/;"	v	file:
+skip	fcgiapp.c	/^    int skip;                 \/* reader: don't deliver content bytes *\/$/;"	m	struct:FCGX_Stream_Data	file:
+sock	os_win32.c	/^    SOCKET sock;$/;"	m	union:__anon3	file:
+srcdir	Makefile	/^srcdir = .$/;"	m
+status	os_win32.c	/^    int status;$/;"	m	struct:FD_TABLE	file:
+stdioHandles	os_win32.c	/^static HANDLE stdioHandles[3] = {INVALID_HANDLE_VALUE, INVALID_HANDLE_VALUE,$/;"	v	file:
+str_dup	os_unix.c	/^static char * str_dup(const char * str)$/;"	f	file:
+strerror	strerror.c	/^strerror(int num)$/;"	f
+subdir	Makefile	/^subdir = libfcgi$/;"	m
+sync	fcgio.cpp	/^int fcgi_streambuf::sync()$/;"	f	class:fcgi_streambuf
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+the_request	fcgiapp.c	/^static FCGX_Request the_request;$/;"	v	file:
+top_build_prefix	Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+type	fcgiapp.c	/^    int type;                 \/* reader: FCGI_PARAMS or FCGI_STDIN$/;"	m	struct:FCGX_Stream_Data	file:
+type	os_win32.c	/^    FILE_TYPE type;$/;"	m	struct:FD_TABLE	file:
+uflow	fcgio.cpp	/^int fcgi_streambuf::uflow() $/;"	f	class:fcgi_streambuf
+underflow	fcgio.cpp	/^int fcgi_streambuf::underflow()$/;"	f	class:fcgi_streambuf
+unixVariant	os_unix.c	/^    struct  sockaddr_un	unixVariant;$/;"	m	union:SockAddrUnion	typeref:struct:SockAddrUnion::sockaddr_un	file:
+value	os_win32.c	/^    unsigned int value;$/;"	m	union:__anon3	file:
+vec	fcgiapp.c	/^    FCGX_ParamArray vec;    \/* vector of strings *\/$/;"	m	struct:Params	file:
+webServerAddressList	fcgiapp.c	/^static char *webServerAddressList = NULL;$/;"	v	file:
+writeFdSet	os_unix.c	/^static fd_set writeFdSet;$/;"	v	file:
+writeFdSetPost	os_unix.c	/^static fd_set writeFdSetPost;$/;"	v	file:
+write_it_all	fcgiapp.c	/^static int write_it_all(int fd, char *buf, int len)$/;"	f	file:
+xsgetn	fcgio.cpp	/^streamsize fcgi_streambuf::xsgetn(char_type * s, streamsize n) $/;"	f	class:fcgi_streambuf
+xsputn	fcgio.cpp	/^streamsize fcgi_streambuf::xsputn(const char_type * s, streamsize n) $/;"	f	class:fcgi_streambuf
+~fcgi_streambuf	fcgio.cpp	/^fcgi_streambuf::~fcgi_streambuf(void)$/;"	f	class:fcgi_streambuf
